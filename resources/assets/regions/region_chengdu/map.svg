@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1400" width="2048" height="1400">
+  <defs>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3e6c8"/>
+      <stop offset="1" stop-color="#e4d3a8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.62" cy="0.62" r="0.7">
+      <stop offset="0" stop-color="#fff6df" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff6df" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="2048" height="1400" fill="url(#land)"/>
+  <rect width="2048" height="1400" fill="url(#glow)"/>
+
+  <!-- 西北山地（青城山/都江堰一带） -->
+  <polygon points="0,0 1024,0 640,804 0,596 0,447" fill="#cdbf94" opacity=".75"/>
+  <polygon points="0,0 640,0 384,506 0,298 0,149" fill="#b9aa7d" opacity=".6"/>
+
+  <!-- 市区暖色块（东南） -->
+  <rect x="1267" y="819"
+        width="589" height="685" rx="60"
+        fill="#efd9b0" opacity=".55"/>
+
+  <!-- 城市绿地 -->
+  <circle cx="1510" cy="1162" r="90" fill="#bcd09a" opacity=".7"/>
+  <circle cx="1779" cy="942" r="70" fill="#a9c785" opacity=".7"/>
+
+  <!-- 岷江主干 -->
+  <polyline points="128.0,29.8 435.2,148.9 896.0,595.7 1280.0,983.0 1459.2,1280.9 1612.8,1400.0" fill="none" stroke="#9fc6d8" stroke-width="22"
+            stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+  <!-- 府南河 -->
+  <polyline points="1408.0,983.0 1536.0,1102.1 1638.4,1191.5 1664.0,1340.4" fill="none" stroke="#9fc6d8" stroke-width="14"
+            stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+
+  <!-- 图廓标题 -->
+  <text x="2008" y="1364" text-anchor="end"
+        font-family="system-ui, PingFang SC, sans-serif" font-size="44"
+        fill="#9c8a5e" opacity=".5">成都 · CHENGDU</text>
+</svg>

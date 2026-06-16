@@ -1,0 +1,25 @@
+{
+  "name": "atlas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Atlas - 路过：在线互动式虚拟旅行体验产品 (MVP)",
+  "workspaces": [
+    "shared",
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "build:shared": "npm run build -w @atlas/shared",
+    "build:frontend": "npm run build:shared && npm run build -w @atlas/frontend",
+    "build:backend": "npm run build:shared && npm run build -w @atlas/backend",
+    "build:web": "npm run build:shared && npm run build -w @atlas/frontend",
+    "build": "npm run build:shared && npm run build -w @atlas/frontend",
+    "dev:frontend": "npm run dev -w @atlas/frontend -- -p ${FRONTEND_PORT:-3000} -H ${FRONTEND_HOST:-${HOST:-0.0.0.0}}",
+    "dev:backend": "npm run dev -w @atlas/backend",
+    "start:frontend": "npm run start -w @atlas/frontend -- -p ${FRONTEND_PORT:-3000} -H ${FRONTEND_HOST:-${HOST:-0.0.0.0}}",
+    "start:backend": "npm run start -w @atlas/backend",
+    "assets:gen": "npm run build:shared && node scripts/gen-assets.mjs",
+    "assets:map": "npm run build:shared && node scripts/gen-region-map.mjs",
+    "assets:serve": "node scripts/asset-server.mjs"
+  }
+}

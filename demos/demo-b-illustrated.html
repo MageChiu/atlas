@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>方案 B · 插画底图 + 经纬度投影打点</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0f1115; color: #fff;
+    font-family: system-ui, -apple-system, "PingFang SC", sans-serif;
+    display: flex; flex-direction: column; height: 100vh; overflow: hidden;
+  }
+  header {
+    padding: 12px 18px; border-bottom: 1px solid #232733;
+    display: flex; align-items: baseline; gap: 12px;
+  }
+  header h1 { font-size: 16px; margin: 0; color: #e8b04b; }
+  header span { font-size: 12px; color: #8b93a7; }
+  .stage { flex: 1; position: relative; overflow: hidden; }
+  /* 地图画布：保持 bbox 宽高比 1.462，居中 */
+  .map-wrap {
+    position: absolute; inset: 0; margin: auto;
+    aspect-ratio: 1462 / 1000; max-width: 100%; max-height: 100%;
+  }
+  svg { width: 100%; height: 100%; display: block; border-radius: 8px;
+        box-shadow: 0 10px 40px rgba(0,0,0,.5); }
+  /* 景点图钉（绝对定位，锚点在底部尖端） */
+  .pin {
+    position: absolute; transform: translate(-50%, -100%);
+    cursor: pointer; text-align: center; transition: transform .15s;
+  }
+  .pin:hover { transform: translate(-50%, -100%) scale(1.12); z-index: 5; }
+  .pin .dot {
+    width: 34px; height: 34px; border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg); margin: 0 auto;
+    border: 3px solid #fff; box-shadow: 0 3px 8px rgba(0,0,0,.4);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .pin .dot span { transform: rotate(45deg); font-size: 16px; }
+  .pin.locked .dot { background: #5a6072; opacity: .85; }
+  .pin.open .dot { background: linear-gradient(135deg,#f0b94f,#e0762f); }
+  .pin .label {
+    margin-top: 6px; font-size: 12px; white-space: nowrap;
+    text-shadow: 0 1px 3px #000; font-weight: 600;
+  }
+  .card {
+    position: absolute; transform: translate(-50%, calc(-100% - 44px));
+    background: rgba(20,24,33,.96); border: 1px solid #2f3545;
+    border-radius: 10px; padding: 10px 12px; width: 220px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5); display: none; z-index: 10;
+  }
+  .pin:hover .card { display: block; }
+  .card b { color: #e8b04b; }
+  .card p { margin: 6px 0 0; font-size: 12px; color: #c3c9d6; line-height: 1.5; }
+  .card .geo { margin-top: 6px; font-size: 11px; color: #6f7686; }
+  footer { padding: 8px 18px; border-top: 1px solid #232733; font-size: 12px; color: #6f7686; }
+</style>
+</head>
+<body>
+<header>
+  <h1>方案 B · 插画底图 + 经纬度投影</h1>
+  <span>美术风底图（此处为内联 SVG 示意，正式版换成插画成都地图）；8 个景点按真实经纬度 + bbox 投影打点</span>
+</header>
+
+<div class="stage">
+  <div class="map-wrap" id="wrap">
+    <!-- 风格化"插画底图"示意：暖色地块 + 河流 + 绿地。正式方案此处替换为真实插画地图 PNG -->
+    <svg viewBox="0 0 1462 1000" preserveAspectRatio="xMidYMid slice" id="svg">
+      <defs>
+        <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f3e6c8"/>
+          <stop offset="1" stop-color="#e4d3a8"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="0.5" cy="0.4" r="0.7">
+          <stop offset="0" stop-color="#fff6df" stop-opacity=".5"/>
+          <stop offset="1" stop-color="#fff6df" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1462" height="1000" fill="url(#land)"/>
+      <rect width="1462" height="1000" fill="url(#glow)"/>
+      <!-- 山地（西北：青城山/都江堰一带） -->
+      <path d="M0,0 L520,0 L420,260 L230,360 L0,300 Z" fill="#cdbf94" opacity=".7"/>
+      <path d="M60,60 L300,120 L200,250 L40,210 Z" fill="#b9aa7d" opacity=".6"/>
+      <!-- 岷江/府南河 示意 -->
+      <path d="M250,330 C500,420 760,520 980,520 C1180,520 1330,470 1462,500"
+            fill="none" stroke="#9fc6d8" stroke-width="14" opacity=".8" stroke-linecap="round"/>
+      <path d="M900,560 C1000,650 1050,760 1040,900" fill="none"
+            stroke="#9fc6d8" stroke-width="10" opacity=".7" stroke-linecap="round"/>
+      <!-- 城市绿地 -->
+      <circle cx="980" cy="640" r="60" fill="#bcd09a" opacity=".7"/>
+      <circle cx="1120" cy="560" r="40" fill="#bcd09a" opacity=".7"/>
+      <!-- 市区暖色块（东南） -->
+      <rect x="820" y="560" width="420" height="320" rx="40" fill="#efd9b0" opacity=".5"/>
+    </svg>
+  </div>
+</div>
+
+<footer id="status">加载中…</footer>
+
+<script>
+  // ===== 真实经纬度数据（WGS84） =====
+  const SPOTS = [
+    { id:'dufu',     title:'杜甫草堂', lng:104.0287, lat:30.6597, open:true,  emoji:'📜', desc:'诗圣杜甫故居，浣花溪畔园林与茅屋。' },
+    { id:'wuhou',    title:'武侯祠',   lng:104.0479, lat:30.6463, open:true,  emoji:'🏯', desc:'纪念诸葛亮，三国文化圣地。' },
+    { id:'jinli',    title:'锦里古街', lng:104.0489, lat:30.6451, open:true,  emoji:'🏮', desc:'川西古街，红灯笼、茶馆与小吃。' },
+    { id:'kuanzhai', title:'宽窄巷子', lng:104.0578, lat:30.6695, open:true,  emoji:'🍵', desc:'清代街巷，老成都生活缩影。' },
+    { id:'panda',    title:'大熊猫基地', lng:104.1450, lat:30.7336, open:true, emoji:'🐼', desc:'成都北郊大熊猫家园。' },
+    { id:'chunxi',   title:'春熙路',   lng:104.0817, lat:30.6526, open:true,  emoji:'🛍️', desc:'最繁华商业步行街区。' },
+    { id:'dujiang',  title:'都江堰',   lng:103.6062, lat:31.0008, open:false, emoji:'💧', desc:'世界文化遗产水利工程（待解锁）。' },
+    { id:'qingcheng',title:'青城山',   lng:103.5169, lat:30.9047, open:false, emoji:'⛰️', desc:'道教名山，青城天下幽（待解锁）。' },
+  ];
+
+  // ===== 地图 bbox（覆盖全部景点，宽高比≈1.462）=====
+  const BOUNDS = { west:103.45, east:104.25, south:30.58, north:31.05 };
+
+  // ===== 投影：经纬度 -> 百分比坐标 =====
+  function project(lng, lat) {
+    const x = (lng - BOUNDS.west) / (BOUNDS.east - BOUNDS.west);
+    const y = (BOUNDS.north - lat) / (BOUNDS.north - BOUNDS.south); // 纬度朝上、像素朝下
+    return { xPct: x * 100, yPct: y * 100 };
+  }
+
+  // ===== 渲染图钉 =====
+  const wrap = document.getElementById('wrap');
+  SPOTS.forEach(s => {
+    const { xPct, yPct } = project(s.lng, s.lat);
+    const pin = document.createElement('div');
+    pin.className = 'pin ' + (s.open ? 'open' : 'locked');
+    pin.style.left = xPct + '%';
+    pin.style.top = yPct + '%';
+    pin.innerHTML = `
+      <div class="card"><b>${s.title}</b><p>${s.desc}</p>
+        <div class="geo">📍 ${s.lat.toFixed(4)}, ${s.lng.toFixed(4)}</div></div>
+      <div class="dot"><span>${s.open ? s.emoji : '🔒'}</span></div>
+      <div class="label">${s.title}</div>`;
+    wrap.appendChild(pin);
+  });
+
+  // ===== bbox 宽高比校验（含纬度 cos 修正）=====
+  const latC = (BOUNDS.north + BOUNDS.south) / 2;
+  const ratio = (BOUNDS.east - BOUNDS.west) * Math.cos(latC * Math.PI/180) / (BOUNDS.north - BOUNDS.south);
+  document.getElementById('status').textContent =
+    `bbox 宽高比校验 ratio=${ratio.toFixed(3)}（底图应≈此值，当前 SVG=1.462）｜共 ${SPOTS.length} 个景点，悬停查看详情`;
+</script>
+</body>
+</html>

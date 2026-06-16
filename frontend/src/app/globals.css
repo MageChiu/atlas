@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: #0f1115;
+  color: #f5f6f8;
+}
+
+#__next,
+body > div {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
