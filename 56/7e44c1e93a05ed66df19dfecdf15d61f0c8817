@@ -1,0 +1,607 @@
+backend/tsconfig.json
+  s_81790e42c6bc6a::t_31ba1ed5ce2b7c 1-25
+backend/src/common/current-user.decorator.ts
+  s_81790e42c6bc6a::t_a3ebe05361a8f2 1-23
+backend/src/main.ts
+  s_81790e42c6bc6a::t_a3e0d53eb48757 1,3-23
+  s_81790e42c6bc6a::t_d3fc4331afbff2 2
+frontend/src/scenes/components/DomSceneLayer.tsx
+  s_a9a555b4b26379::t_6b3e5c280bf56a 1-51
+shared/README.md
+  s_19629b08d40df4::t_f5a172efa47552 1-110
+frontend/src/scenes/components/SceneHud.tsx
+  s_a9a555b4b26379::t_85d0013266f32f 1-80
+backend/src/common/business-exception.filter.ts
+  s_19629b08d40df4::t_6da90aa6df96fd 17-18,29,38,52-58 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a317e9f569fb2ffbf0cb882","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[17,18]},{"Single":29},{"Single":38},{"Range":[52,58]}]}]}
+  s_81790e42c6bc6a::t_28a00c3e60a977 1-16,19-28,30-37,39-51,59-60
+backend/src/config/config.module.ts
+  s_81790e42c6bc6a::t_9a41a5ee4334a2 2
+  s_81790e42c6bc6a::t_d629eacb5667df 1,3-9
+.eslintrc.cjs
+  s_19629b08d40df4::t_1beb438902d007 1-19
+backend/README.md
+  s_81790e42c6bc6a::t_e19a399b85bf6e 1-70
+backend/src/config/app-config.service.ts
+  s_81790e42c6bc6a::t_7253e0a0b0500b 1-21
+shared/src/index.ts
+  s_19629b08d40df4::t_e67c98cf02f325 1-10
+frontend/src/hooks/useSceneRuntime.ts
+  s_a9a555b4b26379::t_ebe841bd0f813d 9,15,23-34,38,44,49
+  s_a9a555b4b26379::t_b18c082e759cc7 1-8,10-14,16-22,35-37,39-43,45-48,50
+backend/src/reward/reward.module.ts
+  s_a9a555b4b26379::t_597787f18991e5 1-9
+backend/src/ai/ai.controller.ts
+  s_81790e42c6bc6a::t_7f8accf6feb906 1-60
+backend/src/content/content.controller.ts
+  s_81790e42c6bc6a::t_1ff45e852d371a 1-47
+backend/src/ai/ai.module.ts
+  s_81790e42c6bc6a::t_033278e38cfaa5 1-10
+.env.example
+  s_19629b08d40df4::t_ab4e1a9e6c1bf9 13-14
+  s_19629b08d40df4::t_22d7b2b05702e9 1-6,10-12,15-16,18-29
+  s_19629b08d40df4::t_e72710e9563157 7-9,17
+run.sh
+  s_19629b08d40df4::t_1935d57650867c 1-126 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a317994569fb2ffbf0cb84e","tool_type":"agent","tool_id":"Write","line_ranges":[{"Range":[1,126]}]}]}
+frontend/src/components/domain/GeneratedPhotoPreview.tsx
+  s_a9a555b4b26379::t_ea892708f23dc2 1-55
+backend/src/action/action.module.ts
+  s_81790e42c6bc6a::t_6c1b7c861c78d4 1-18
+frontend/src/services/mock/mockApi.ts
+  s_a9a555b4b26379::t_b67aeda8fb52ce 1-287,289-329,331-357
+  s_19629b08d40df4::t_53cc9e43b42817 330
+  s_19629b08d40df4::t_56cb02d7633045 288
+backend/.gitignore
+  s_81790e42c6bc6a::t_f8e61c3326c0d4 1-3
+backend/src/progress/progress.service.ts
+  s_81790e42c6bc6a::t_d30de5f2b07e9e 1-92
+frontend/src/services/errors.ts
+  s_a9a555b4b26379::t_362810ecc7347b 1-39
+frontend/src/components/ui/ModalShell.tsx
+  s_a9a555b4b26379::t_dde9c7771a0a52 1-45
+shared/src/contracts/index.ts
+  s_19629b08d40df4::t_875f131ab27f8d 1-6
+backend/src/common/response.interceptor.ts
+  s_81790e42c6bc6a::t_efc580be721286 1-22
+backend/src/store/config.repository.ts
+  s_81790e42c6bc6a::t_229a85a286881d 1-80
+tasks/README.md
+  s_19629b08d40df4::t_239db8b481706d 18-27
+frontend/package.json
+  s_19629b08d40df4::t_6b2f7adbeecdbe 7-9
+frontend/src/scenes/components/SpotScene.tsx
+  s_19629b08d40df4::t_293fa70af809c7 25,28-31
+  s_19629b08d40df4::t_f17fa363258c87 5
+  s_a9a555b4b26379::t_9c109dfeaeecbe 1-4,6-24,26-27,32-58
+frontend/src/components/ui/RewardCard.tsx
+  s_a9a555b4b26379::t_00e82029243b58 1-2,4-7,9-12,14-15,19-30
+  s_19629b08d40df4::t_c2006e599c654d 3,8,13,16-18
+backend/src/me/me.controller.ts
+  s_81790e42c6bc6a::t_86b36a386f0dad 1-31
+frontend/src/scenes/camera/Camera.ts
+  s_a9a555b4b26379::t_c6ca2693b38d5a 1-124
+frontend/src/utils/assets.ts
+  s_a9a555b4b26379::t_3b9fd80c4589d7 1,11-12,16-19,27-28,33,35-38,42-43,46,48-51,54-59,62,88
+  s_19629b08d40df4::t_9fbf54b0e93d8a 2-10,13-15,20-26,29-32,34,39-41,44-45,47,52-53,60-61,63-87
+frontend/postcss.config.js
+  s_a9a555b4b26379::t_6215715700f7b8 1-6
+shared/src/enums.ts
+  s_19629b08d40df4::t_64d5c52552a627 1-104
+shared/src/seed/dataset.ts
+  s_19629b08d40df4::t_dfdf26d625fedc 1-2,5-7,9-24,26-30,32-47,49,57-60,62,70-73,75,83-86,88,96-99,101,110-112,114,122-123,152-155,157,160,162-167,170,172-174,176-177,180,182-184,207,209,211,214,216-221,224,226-228,241,243,245,248,250-255,258,260-262,264,266,269,271-274,285-286,289,291,293,306,308-309,312,314,317,319,321,324,326-330,332,335,337-342,348,350,353-356,364-367,369,372-374,376-377,379,382,392-393,395-396,398,401-404,407,419-420,422,425-427,429-430,432,435-439,444,448-458,466-467,469,471,480-481,483,485,487-488,490,492,494-495,497,499,501-505,507,510,522-525,534-535,537,541-543,545,549-552
+  s_19629b08d40df4::t_1573fdbd204f03 3-4,8,25,31,48,50-56,61,63-69,74,76-82,87,89-95,100,102-109,113,115-121,124-151,156,158-159,161,168-169,171,175,178-179,181,185-206,208,210,212-213,215,222-223,225,229-240,242,244,246-247,249,256-257,259,263,265,267-268,270,275-284,287-288,290,292,294-305,307,310-311,313,315-316,318,320,322-323,325,331,333-334,336,343-347,349,351-352,357-363,368,370-371,375,378,380-381,383-391,394,397,399-400,405-406,408-418,421,423-424,428,431,433-434,440-443,445-447,459-465,468,470,472-479,482,484,486,489,491,493,496,498,500,506,508-509,511-521,526-533,536,538-540,544,546-548
+backend/src/progress/progress.module.ts
+  s_81790e42c6bc6a::t_a2d0a55677c4e9 1-9
+frontend/src/components/shell/ModalContainer.tsx
+  s_a9a555b4b26379::t_e8668b722c1eaa 1-37
+frontend/src/app/providers.tsx
+  s_a9a555b4b26379::t_77ccaf05dd2cb6 1-32
+frontend/src/hooks/usePollTask.ts
+  s_a9a555b4b26379::t_c417f959586105 1-55
+frontend/src/app/layout.tsx
+  s_a9a555b4b26379::t_61692fcc978e50 1-31
+backend/src/common/business.exception.ts
+  s_81790e42c6bc6a::t_09350ccafad882 1-15
+frontend/src/scenes/mappers.ts
+  s_a9a555b4b26379::t_931bba57c48bcf 1-29
+frontend/src/hooks/useContentQueries.ts
+  s_a9a555b4b26379::t_e743b130367c1e 1-68
+frontend/src/stores/actionStore.ts
+  s_a9a555b4b26379::t_5ac4d50c663138 1-37
+frontend/src/app/page.tsx
+  s_a9a555b4b26379::t_812a0cc7e2eda9 1-6
+docs/Atlas-路过-素材资源方案.md
+  s_19629b08d40df4::t_bb67d87b9aec5b 1-94
+frontend/src/services/httpClient.ts
+  s_a9a555b4b26379::t_88832b4dab4380 1-55
+frontend/next-env.d.ts
+  s_a9a555b4b26379::t_05b114bc8b3d47 1-5
+backend/src/ops/ops.controller.ts
+  s_81790e42c6bc6a::t_461a6fe881516f 1-21
+frontend/src/utils/id.ts
+  s_a9a555b4b26379::t_7dc51c1ecf1beb 1-12
+frontend/src/stores/authStore.ts
+  s_a9a555b4b26379::t_5f6ea1e69c546e 1-23
+backend/src/action/action.service.ts
+  s_81790e42c6bc6a::t_705cad9f16b069 1-180
+backend/src/event/event.service.ts
+  s_81790e42c6bc6a::t_7086096136e8e4 1-56
+.prettierrc.json
+  s_19629b08d40df4::t_cc2583abf49a67 1-9
+frontend/src/stores/progressStore.ts
+  s_a9a555b4b26379::t_cc1b15bb7efbbc 1-22
+shared/src/contracts/ai.ts
+  s_19629b08d40df4::t_2c5e5dcb2fe262 1-42
+frontend/src/services/api.ts
+  s_a9a555b4b26379::t_0d57ae7273dcad 1-94
+shared/src/errors.ts
+  s_19629b08d40df4::t_f862cd873d81d7 1-20,27-39,43
+  s_19629b08d40df4::t_bba5b4ba50a469 21-26,40-42 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a317e88569fb2ffbf0cb87f","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[21,26]},{"Range":[40,42]}]}]}
+frontend/src/app/globals.css
+  s_a9a555b4b26379::t_8b6b12e7b90f4e 1-25
+frontend/tailwind.config.js
+  s_a9a555b4b26379::t_ef5332fc1ded6f 1-23
+frontend/tsconfig.json
+  s_a9a555b4b26379::t_96d82bd5dc2de0 1-24
+.gitignore
+  s_19629b08d40df4::t_298f2380c8e79c 12-14 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a317bd5569fb2ffbf0cb85a","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[12,14]}]}]}
+  s_19629b08d40df4::t_15c3e33f9b24b1 1-11,15-36
+backend/src/health.controller.ts
+  s_81790e42c6bc6a::t_c3411ee4c12657 1-12
+backend/src/app.module.ts
+  s_81790e42c6bc6a::t_44e402c16657b3 1-34
+backend/src/ai/ai.service.ts
+  s_81790e42c6bc6a::t_9e305a821bd2f0 1-199
+.editorconfig
+  s_19629b08d40df4::t_d8fe28fe46cdf8 1-12
+backend/scripts/smoke.mjs
+  s_81790e42c6bc6a::t_785dd4a38fc5c0 1-171
+shared/package.json
+  s_19629b08d40df4::t_22d516912ccdeb 1-27
+backend/src/ops/ops.service.ts
+  s_81790e42c6bc6a::t_a64f140368041d 1-46
+docs/Atlas-路过-后端开发规范.md
+  s_19629b08d40df4::t_c108637605dda9 1-157,190-196
+  s_19629b08d40df4::t_55231a5b4dd46d 158-189
+docs/Atlas-路过-前端开发规范.md
+  s_19629b08d40df4::t_e4702a391a1af0 1-152,174-179
+  s_19629b08d40df4::t_e587079196fb28 153-173
+backend/src/content/content.service.ts
+  s_81790e42c6bc6a::t_58101dddd5e8c4 1-68
+tasks/01-后端.md
+  s_81790e42c6bc6a::t_ca322d08448157 41-46
+  s_81790e42c6bc6a::t_f94a0fdf61cc0f 28-33
+  s_81790e42c6bc6a::t_5ccccb62a96319 67-69
+  s_81790e42c6bc6a::t_8aad3d3df3f1c8 77-78
+  s_19629b08d40df4::t_f0a003651b76cf 1-6,11-15,21-27,34-40,47-53,60-66,70-76,79-85,89-90
+  s_81790e42c6bc6a::t_be4a2a8125564a 86-88
+  s_81790e42c6bc6a::t_1b7e39a18324e3 16-20
+  s_81790e42c6bc6a::t_4c27e461334445 7-10
+  s_81790e42c6bc6a::t_55938fd4114745 54-59
+frontend/src/scenes/components/SceneStage.tsx
+  s_a9a555b4b26379::t_94e18960a1cac5 1-2,4-11,13-15,19-20,22-33,45-46,52,71,77,79-80,82,86-91
+  s_a9a555b4b26379::t_cc3bd58b11f76c 3,12,16-18,21,34-44,47-51,53-70,72-76,78,81,83-85
+backend/src/reward/reward.service.ts
+  s_81790e42c6bc6a::t_0c86a9e8ae0dd5 1-50
+backend/src/action/action-rules.service.ts
+  s_81790e42c6bc6a::t_8fd3c873870261 1-74
+frontend/src/components/shell/AppHeader.tsx
+  s_a9a555b4b26379::t_4f83c430e34499 1-48
+shared/src/models/ai.ts
+  s_19629b08d40df4::t_310e5fd6ae9c17 1-39
+shared/src/seed/index.ts
+  s_19629b08d40df4::t_c01185a4ce7039 1-2
+shared/src/contracts/common.ts
+  s_19629b08d40df4::t_40f66309c1ecb1 1-27
+backend/src/me/me.module.ts
+  s_81790e42c6bc6a::t_1345d2ffa157ca 1-9
+frontend/src/app/world/page.tsx
+  s_a9a555b4b26379::t_ccd979382c4649 1-20
+backend/src/content/content.module.ts
+  s_81790e42c6bc6a::t_2d4b1899d042a3 1-9
+frontend/src/hooks/useExecuteAction.ts
+  s_a9a555b4b26379::t_091bfa15e19c74 1-96
+backend/src/event/event.module.ts
+  s_81790e42c6bc6a::t_3324fbffa870db 1-9
+backend/src/action/action.controller.ts
+  s_81790e42c6bc6a::t_f94eaf520dc3a8 1-37
+frontend/src/stores/uiStore.ts
+  s_a9a555b4b26379::t_e1057ad0ae5351 1-45
+frontend/src/app/share/[id]/page.tsx
+  s_a9a555b4b26379::t_5b0d7875aebd20 1-44
+frontend/src/scenes/runtime/SceneRuntime.ts
+  s_a9a555b4b26379::t_c9a892b98d0276 1-143
+frontend/src/hooks/useAuthBootstrap.ts
+  s_a9a555b4b26379::t_be0c316dd2d89a 1-21
+frontend/src/app/region/[id]/page.tsx
+  s_a9a555b4b26379::t_206adf8e02dd21 1-24
+frontend/src/app/generated/page.tsx
+  s_a9a555b4b26379::t_8764418f650304 1-40
+shared/src/models/content.ts
+  s_19629b08d40df4::t_19eef71bb065f5 1-120
+backend/src/store/store.module.ts
+  s_81790e42c6bc6a::t_9d6bdae113b8b1 1-14
+shared/src/models/index.ts
+  s_19629b08d40df4::t_ba47b8755301f2 1-3
+backend/src/store/state.repository.ts
+  s_81790e42c6bc6a::t_d233e54720ced5 1-86
+shared/src/contracts/action.ts
+  s_19629b08d40df4::t_be2e8a7e31fe6f 1-46
+frontend/src/components/domain/PhotoGeneratePanel.tsx
+  s_a9a555b4b26379::t_c162434322caa9 1-119
+backend/src/ops/risk.service.ts
+  s_81790e42c6bc6a::t_ca1c2885f2bc55 1-20
+package.json
+  s_19629b08d40df4::t_6068b75aaec8aa 12-20
+  s_19629b08d40df4::t_d9989de1542407 1-11,21-22
+shared/src/contracts/content.ts
+  s_19629b08d40df4::t_28f6d5bf254d5a 1-50
+shared/tsconfig.json
+  s_19629b08d40df4::t_5a262ba04ccbc0 1-21
+frontend/src/components/domain/EventModal.tsx
+  s_a9a555b4b26379::t_9f5828f6a35e25 1-48
+frontend/src/app/collections/page.tsx
+  s_19629b08d40df4::t_47ed338d2d68ec 4
+  s_a9a555b4b26379::t_d18b4262d07a1b 1-3,5-16,20-27,29-30,34-39,42-46
+  s_19629b08d40df4::t_0aba6fef935130 17-19,28,31-33,40-41
+frontend/src/stores/sceneStore.ts
+  s_a9a555b4b26379::t_2d8b59bcfaf917 1-82
+frontend/src/components/domain/EncounterPanel.tsx
+  s_a9a555b4b26379::t_b0305a6162880f 1-69
+README.md
+  s_19629b08d40df4::t_9cb43f1c0152c4 19-34,52-53,55,57-73,75-81
+  s_19629b08d40df4::t_e761b9691ecfc2 36-51,54 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a317bea569fb2ffbf0cb860","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[36,51]},{"Single":54}]}]}
+  s_19629b08d40df4::t_5202c9f52fa914 1-18,35,56,74
+frontend/next.config.js
+  s_a9a555b4b26379::t_8139c48121e79e 1-8
+shared/src/seed/types.ts
+  s_19629b08d40df4::t_5ef60e3964b5ff 1-25
+backend/nest-cli.json
+  s_81790e42c6bc6a::t_6745ab4d97c0a7 1-8
+frontend/src/components/domain/RewardPopup.tsx
+  s_a9a555b4b26379::t_9812b64be5dba8 1-32
+docs/Atlas-路过-API协议说明.md
+  s_19629b08d40df4::t_1aad4e56e6c191 228-242 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a317ebb569fb2ffbf0cb888","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[228,242]}]}]}
+frontend/src/components/shell/AppFooter.tsx
+  s_a9a555b4b26379::t_66b176be5d7aa2 1-8
+frontend/src/components/shell/ToastContainer.tsx
+  s_a9a555b4b26379::t_b5c78bff8dd858 1-41
+frontend/src/config.ts
+  s_a9a555b4b26379::t_da3a112dce0d5b 1-6,9
+  s_19629b08d40df4::t_4ff5c43ed40e65 7-8
+frontend/src/app/spot/[id]/page.tsx
+  s_a9a555b4b26379::t_601050f7297c63 1-28
+shared/src/models/user.ts
+  s_19629b08d40df4::t_520cb3f2e013aa 1-61
+tasks/02-前端.md
+  s_a9a555b4b26379::t_cfa35123ce577d 58-62
+  s_a9a555b4b26379::t_f6db70bd2ebe00 25-27
+  s_19629b08d40df4::t_56cfe8a0c3c26f 1-12,18-24,28-34,40-46,51-57,63-69,75-81,85-96
+  s_a9a555b4b26379::t_93185eb73a5b02 35-39
+  s_a9a555b4b26379::t_2b12545da7c355 70-74
+  s_a9a555b4b26379::t_64257f0d8c099f 47-50
+  s_a9a555b4b26379::t_a1b6bb281c3884 13-17
+  s_a9a555b4b26379::t_7139b4e0e48f11 82-84
+shared/src/contracts/routes.ts
+  s_19629b08d40df4::t_f46eb230f7055d 1-24
+frontend/public/assets/README.md
+  s_19629b08d40df4::t_cb30e891bfcfe5 1-55
+frontend/src/components/domain/ActionPanel.tsx
+  s_a9a555b4b26379::t_b6cc5e85e70745 1-86
+shared/src/contracts/me.ts
+  s_19629b08d40df4::t_b708a0a3e2090b 1-40
+backend/src/ops/ops.module.ts
+  s_81790e42c6bc6a::t_def46a5a98f185 2,11
+  s_81790e42c6bc6a::t_4eaba4881941ab 1,3-10,12-15
+backend/src/me/me.service.ts
+  s_81790e42c6bc6a::t_fcdb96b65b8a48 1-68
+tasks/00-公共部分.md
+  h_c3ebd27e3f6b60 13-15,25-28,38-43,51-52,60-62,70-72
+  s_19629b08d40df4::t_2ea3eac075bc8b 1-11,16-24,29-37,44-50,53-59,63-69,73-84
+  s_19629b08d40df4::t_088d5b8d4da2c7 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "567e44c1e93a05ed66df19dfecdf15d61f0c8817",
+  "prompts": {},
+  "humans": {
+    "h_c3ebd27e3f6b60": {
+      "author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    }
+  },
+  "sessions": {
+    "s_19629b08d40df4": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a311db4daeaef2db5f9dfc2",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    },
+    "s_81790e42c6bc6a": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316cf6569fb2ffbf0cb471",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    },
+    "s_a9a555b4b26379": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316917569fb2ffbf0cb402",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    }
+  },
+  "attestation_metadata": {
+    ".gitignore": [
+      {
+        "hash": "s_19629b08d40df4::t_298f2380c8e79c",
+        "line_ranges": [
+          {
+            "Range": [
+              12,
+              14
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a317bd5569fb2ffbf0cb85a",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  12,
+                  14
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "README.md": [
+      {
+        "hash": "s_19629b08d40df4::t_e761b9691ecfc2",
+        "line_ranges": [
+          {
+            "Range": [
+              36,
+              51
+            ]
+          },
+          {
+            "Single": 54
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a317bea569fb2ffbf0cb860",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  36,
+                  51
+                ]
+              },
+              {
+                "Single": 54
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "backend/src/common/business-exception.filter.ts": [
+      {
+        "hash": "s_19629b08d40df4::t_6da90aa6df96fd",
+        "line_ranges": [
+          {
+            "Range": [
+              17,
+              18
+            ]
+          },
+          {
+            "Single": 29
+          },
+          {
+            "Single": 38
+          },
+          {
+            "Range": [
+              52,
+              58
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a317e9f569fb2ffbf0cb882",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  17,
+                  18
+                ]
+              },
+              {
+                "Single": 29
+              },
+              {
+                "Single": 38
+              },
+              {
+                "Range": [
+                  52,
+                  58
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "docs/Atlas-路过-API协议说明.md": [
+      {
+        "hash": "s_19629b08d40df4::t_1aad4e56e6c191",
+        "line_ranges": [
+          {
+            "Range": [
+              228,
+              242
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a317ebb569fb2ffbf0cb888",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  228,
+                  242
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "run.sh": [
+      {
+        "hash": "s_19629b08d40df4::t_1935d57650867c",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              126
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a317994569fb2ffbf0cb84e",
+            "tool_type": "agent",
+            "tool_id": "Write",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  126
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "shared/src/errors.ts": [
+      {
+        "hash": "s_19629b08d40df4::t_bba5b4ba50a469",
+        "line_ranges": [
+          {
+            "Range": [
+              21,
+              26
+            ]
+          },
+          {
+            "Range": [
+              40,
+              42
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a317e88569fb2ffbf0cb87f",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  21,
+                  26
+                ]
+              },
+              {
+                "Range": [
+                  40,
+                  42
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remote_transcripts": {
+    "s_19629b08d40df4": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_1935d57650867c": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_1aad4e56e6c191": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_298f2380c8e79c": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_6da90aa6df96fd": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_bba5b4ba50a469": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_e761b9691ecfc2": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    }
+  }
+}
