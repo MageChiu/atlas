@@ -1,0 +1,843 @@
+backend/src/ai/ai.module.ts
+  s_81790e42c6bc6a::t_033278e38cfaa5 1-10
+backend/src/me/me.service.ts
+  s_81790e42c6bc6a::t_fcdb96b65b8a48 1-68
+tasks/03-地图坐标-后端.md
+  s_81790e42c6bc6a::t_86ddb5db0719da 29-50
+  s_81790e42c6bc6a::t_f608381aaf910f 72-74
+tasks/03-地图真实坐标标记.md
+  h_c3ebd27e3f6b60 1-21,23-24,27,29,31,33-34,36,38,40,43-44,47,52,60,62,64-68,70,72,74,76-81,83-86,88-96,98,100,102,104-111,113-123,134-135,137,139-144,147-151
+  s_19629b08d40df4::t_a9c6b264c2e9ec 41-42,45,48-50,53-56,58
+  s_19629b08d40df4::t_4ac13c08a6c1a4 22,25-26,28,30,32,35,37,39,46,51,57,59,61,63,69,71,73,75,82,87,97,99,101,103,112,124-133,136,138,145-146
+backend/src/action/action.controller.ts
+  s_81790e42c6bc6a::t_f94eaf520dc3a8 1-37
+shared/src/contracts/common.ts
+  s_19629b08d40df4::t_40f66309c1ecb1 1-27
+frontend/src/scenes/mappers.ts
+  s_a9a555b4b26379::t_77b3fd41980ba0 60-101
+  s_a9a555b4b26379::t_931bba57c48bcf 2-6,27-31,33-36,50-52,56,58-59
+  s_a9a555b4b26379::t_4ff5706d138458 7-26,32
+  s_a9a555b4b26379::t_b1a3904ca1b2f7 1,37-49,53-54,57
+  s_a9a555b4b26379::t_8736fec0043ab2 55
+frontend/src/components/ui/RewardCard.tsx
+  s_a9a555b4b26379::t_00e82029243b58 1-2,4-7,9-12,14-15,19-30
+  s_19629b08d40df4::t_c2006e599c654d 3,8,13,16-18
+scripts/gen-assets.mjs
+  s_19629b08d40df4::t_81d81c0c179337 62,70-79,82-83,85-89
+  s_19629b08d40df4::t_24c43ff5c6d48d 32,35,43-46
+  s_19629b08d40df4::t_2cff7ba2b6bc64 1,3,10,17-26,29,31,42,47,52-61,91,94-95,114-116,119-122,146,150-151,153,155-157,159-165
+  s_19629b08d40df4::t_d04793bf6a9588 2,4-9,11-16,27-28,30,33-34,36-41,48-51,63-69,80-81,84,90,92-93,96-113,117-118,123-145,147-149,152,158
+  s_19629b08d40df4::t_a06e2debb2dc56 154
+backend/src/reward/reward.service.ts
+  s_81790e42c6bc6a::t_0c86a9e8ae0dd5 1-50
+backend/src/common/business-exception.filter.ts
+  s_81790e42c6bc6a::t_28a00c3e60a977 1-16,19-28,30-37,39-51,59-60
+  s_19629b08d40df4::t_6da90aa6df96fd 17-18,29,38,52-58
+frontend/src/services/token.ts
+  s_19629b08d40df4::t_73d494928c7e94 1-20
+backend/src/config/app-config.service.ts
+  s_81790e42c6bc6a::t_7253e0a0b0500b 1,3-10,13-23,30
+  s_19629b08d40df4::t_41df73d1f2ea68 2,24-29
+  s_19629b08d40df4::t_08efedbfcaea8c 11-12
+backend/src/auth/auth.service.ts
+  s_19629b08d40df4::t_79d5ab1ecfc923 1-98
+backend/src/ops/risk.service.ts
+  s_81790e42c6bc6a::t_ca1c2885f2bc55 1-20
+frontend/src/scenes/components/DomSceneLayer.tsx
+  s_a9a555b4b26379::t_bd5b4bc02f52ba 9-12,19,22-28,35,40,43-44,51-52,54-55,58-63,120,122-153
+  s_a9a555b4b26379::t_f6d9434fdf0d36 3,34,39,42,64,67,73-76,78,80-90,92-110,112-113
+  s_a9a555b4b26379::t_6b3e5c280bf56a 1-2,4-8,13,31-33,36-38,41,56-57,68-72,79,114-119,121,154
+  s_a9a555b4b26379::t_c18559e8a7a49a 14
+  s_a9a555b4b26379::t_4c4f19ca011159 15-18,20-21,29-30,45-50,53
+  s_a9a555b4b26379::t_7712f86e5f6715 65-66,77,91,111
+backend/src/auth/user.repository.ts
+  s_19629b08d40df4::t_ddd289a2495424 1-81
+shared/src/models/user.ts
+  s_19629b08d40df4::t_520cb3f2e013aa 1-61
+backend/src/event/event.module.ts
+  s_81790e42c6bc6a::t_3324fbffa870db 1-9
+frontend/src/app/page.tsx
+  s_a9a555b4b26379::t_812a0cc7e2eda9 1-6
+frontend/src/scenes/components/SceneHud.tsx
+  s_a9a555b4b26379::t_85d0013266f32f 1-2,4-5,7-9,12-15,18-19,21,24-28,43-58,62,64-69,91-96,103-105
+  s_a9a555b4b26379::t_a2ff2fcb9ea8a6 3,6,10-11,16-17,20,22,29-32,34,36-42,59-61,63,70-90,97-102
+  s_a9a555b4b26379::t_22ced64801d07b 23,33,35
+run.sh
+  s_19629b08d40df4::t_4552d3e7826a26 114-115
+  s_19629b08d40df4::t_94c45bfd81f1ac 193
+  s_19629b08d40df4::t_afb0f0ccc56015 15-22,33-58,70-74,77-79
+  s_19629b08d40df4::t_41dee4f33bd1b0 169,172-173,182
+  s_19629b08d40df4::t_a2c2858a37d44d 69
+  s_19629b08d40df4::t_1935d57650867c 1-5,7-8,12,14,23,25-32,59-68,75-76,80-101,119,121-139,141-142,147-148,151-152,154-168,170,176-177,180-181,183-189,191-192,194
+  s_19629b08d40df4::t_2705952a1d3737 6,9-11,13,24
+  s_19629b08d40df4::t_0490dd1aaa24c2 140,143-144,153
+  s_19629b08d40df4::t_057b187842dde8 174-175,178-179
+  s_19629b08d40df4::t_a04d43cfa4081f 190
+  s_19629b08d40df4::t_37477055272f5e 102-113,116-118,120
+  s_19629b08d40df4::t_06bbe77a24787e 145-146,149-150
+backend/src/store/state.repository.ts
+  s_81790e42c6bc6a::t_d233e54720ced5 1-86
+frontend/src/hooks/usePollTask.ts
+  s_a9a555b4b26379::t_c417f959586105 1-55
+backend/src/store/config.repository.ts
+  s_81790e42c6bc6a::t_229a85a286881d 1,3-27,30-37,39-45,87-88,90,96-130
+  s_81790e42c6bc6a::t_a631b1e8896d48 28-29,38,46-86,89,91-95
+  s_81790e42c6bc6a::t_f05e70a444a231 2
+tasks/05-NPC对话-前端.md
+  s_19629b08d40df4::t_d2233ddefde6b8 1-82
+backend/src/common/auth-context.middleware.ts
+  s_19629b08d40df4::t_64f22d7ef2cec2 1-24
+shared/src/seed/types.ts
+  s_19629b08d40df4::t_5ef60e3964b5ff 1-18,21-27
+  s_19629b08d40df4::t_973863f5ef341b 19-20
+backend/src/main.ts
+  s_81790e42c6bc6a::t_d3fc4331afbff2 2
+  s_19629b08d40df4::t_1d78d5d11eb50d 19-23
+  s_81790e42c6bc6a::t_a3e0d53eb48757 1,3-18,24-26
+backend/src/store/store.module.ts
+  s_81790e42c6bc6a::t_9d6bdae113b8b1 1-14
+tasks/04-区域DAG-前端.md
+  s_19629b08d40df4::t_70c1aee429ceac 1-98
+frontend/src/components/domain/PhotoGeneratePanel.tsx
+  s_a9a555b4b26379::t_c162434322caa9 1-119
+frontend/src/hooks/useAuthBootstrap.ts
+  s_a9a555b4b26379::t_be0c316dd2d89a 1-4,8-10,13-14,16-20,32
+  s_19629b08d40df4::t_6dbf2140ff2636 5-7,11-12,15,21-31
+frontend/src/components/ui/ModalShell.tsx
+  s_a9a555b4b26379::t_dde9c7771a0a52 1-45
+docs/Atlas-路过-API协议说明.md
+  s_19629b08d40df4::t_1aad4e56e6c191 256-270
+  s_19629b08d40df4::t_ae88ca75e96b4c 39-66
+backend/src/common/business.exception.ts
+  s_81790e42c6bc6a::t_09350ccafad882 1-15
+backend/src/content/content.service.ts
+  s_81790e42c6bc6a::t_58101dddd5e8c4 1-24,26,28-31,33-37,40-65
+  s_81790e42c6bc6a::t_6152694e8b4b7e 25,27,32,38-39
+tasks/README.md
+  s_19629b08d40df4::t_239db8b481706d 26-29,31-36
+  s_19629b08d40df4::t_a4640d6561240d 30
+  s_19629b08d40df4::t_9b7e6b61685465 22-24
+  s_19629b08d40df4::t_c0b8b60e8c8fc9 17-19
+  s_19629b08d40df4::t_a270b60d8a63f0 20-21
+backend/tsconfig.json
+  s_81790e42c6bc6a::t_31ba1ed5ce2b7c 1-25
+frontend/src/hooks/useSceneRuntime.ts
+  s_a9a555b4b26379::t_b18c082e759cc7 1-8,10-14,16-22,35-37,39-43,45-48,50
+  s_a9a555b4b26379::t_ebe841bd0f813d 9,15,23-34,38,44,49
+.prettierrc.json
+  s_19629b08d40df4::t_cc2583abf49a67 1-9
+backend/src/common/current-user.decorator.ts
+  s_81790e42c6bc6a::t_a3ebe05361a8f2 1-3,5-6,15,21-22,26-37
+  s_19629b08d40df4::t_31859332c604be 4,7-14,16-20,23-25
+scripts/gen-region-map.mjs
+  s_a9a555b4b26379::t_1072ab8f30c8f1 1-193
+frontend/src/components/shell/ModalContainer.tsx
+  s_a9a555b4b26379::t_e8668b722c1eaa 1-37
+tasks/05-NPC对话-公共部分.md
+  s_19629b08d40df4::t_1190f7e481c443 1-22,24-124,128-129,131-132,135-140
+  s_19629b08d40df4::t_50ec6e3f8414de 23 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a32830d569fb2ffbf0cc1be","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":23}]}]}
+  h_c3ebd27e3f6b60 125-127,130,133-134
+backend/src/progress/progress.module.ts
+  s_81790e42c6bc6a::t_a2d0a55677c4e9 1-9
+frontend/src/app/region/[id]/page.tsx
+  s_a9a555b4b26379::t_98b9a6be05c57a 14,19,21
+  s_a9a555b4b26379::t_206adf8e02dd21 1-13,15-18,20,22-24
+.gitignore
+  s_19629b08d40df4::t_15c3e33f9b24b1 1-11,15-36
+  s_19629b08d40df4::t_298f2380c8e79c 12-14
+shared/src/contracts/ai.ts
+  s_19629b08d40df4::t_2c5e5dcb2fe262 1-42
+shared/src/contracts/action.ts
+  s_19629b08d40df4::t_be2e8a7e31fe6f 1-46
+frontend/src/components/shell/ToastContainer.tsx
+  s_a9a555b4b26379::t_b5c78bff8dd858 1-41
+shared/src/geo/index.ts
+  s_19629b08d40df4::t_0d8ec984f242b1 1
+backend/src/action/action-rules.service.ts
+  s_81790e42c6bc6a::t_8fd3c873870261 1-74
+frontend/src/services/api.ts
+  s_a9a555b4b26379::t_0d57ae7273dcad 1-94
+frontend/postcss.config.js
+  s_a9a555b4b26379::t_6215715700f7b8 1-6
+frontend/src/scenes/components/SceneStage.tsx
+  s_a9a555b4b26379::t_93ac1a6608e981 3,10,19,37,39-40,46,59,86,94,96,99-100,122,124,127-128,133-136,138-139,142,160,167-180
+  s_a9a555b4b26379::t_94e18960a1cac5 1-2,4-8,11-12,14-16,21-22,24-34,38,61-62,70,131,140,156,158,182-187
+  s_a9a555b4b26379::t_cc3bd58b11f76c 13,17-18,20,23,41-45,57-58,60,65-66,68-69,74,87-93,95,129,132,137,141,157,159,181
+  s_a9a555b4b26379::t_d959ca6e738612 144-155,161-166
+  s_a9a555b4b26379::t_cefe020badfe9e 9
+  s_a9a555b4b26379::t_a1afa2e2483044 64,72,78,84
+  s_a9a555b4b26379::t_e83b5edc97f225 47-53,55-56
+  s_a9a555b4b26379::t_7f44f6390566e6 63,67,71,73,75-77,79-80
+  s_a9a555b4b26379::t_333c7608f608f1 35
+  s_a9a555b4b26379::t_2f2f9e019b36bc 54
+  s_a9a555b4b26379::t_d1c3795fd19293 97-98,101-121,123,125-126,130
+  s_a9a555b4b26379::t_aa8b3b5062ec9f 36
+shared/src/contracts/routes.ts
+  s_19629b08d40df4::t_f46eb230f7055d 1-6,12-24,29-33
+  s_19629b08d40df4::t_7c526be72780f1 25-28
+  s_19629b08d40df4::t_f112981a20fe16 7-11
+frontend/src/app/collections/page.tsx
+  s_19629b08d40df4::t_0aba6fef935130 17-19,28,31-33,40-41
+  s_a9a555b4b26379::t_d18b4262d07a1b 1-3,5-16,20-27,29-30,34-39,42-46
+  s_19629b08d40df4::t_47ed338d2d68ec 4
+frontend/src/components/domain/EventModal.tsx
+  s_a9a555b4b26379::t_9f5828f6a35e25 1-48
+docs/Atlas-路过-数据模型设计.md
+  s_19629b08d40df4::t_c5ed99af2b39a3 66
+  s_19629b08d40df4::t_1eded2fabf4460 262-263
+  s_19629b08d40df4::t_045b2f552558c0 48-50
+  s_19629b08d40df4::t_de4aa03ea58f00 61
+  s_19629b08d40df4::t_5ac46ff00d9159 23-47,53-54
+frontend/tailwind.config.js
+  s_a9a555b4b26379::t_ef5332fc1ded6f 1-23
+shared/src/contracts/dialogue.ts
+  s_19629b08d40df4::t_2c40d596c6b402 1-65
+tasks/02-前端.md
+  s_a9a555b4b26379::t_7139b4e0e48f11 82-84
+  s_a9a555b4b26379::t_cfa35123ce577d 58-62
+  s_a9a555b4b26379::t_93185eb73a5b02 35-39
+  s_a9a555b4b26379::t_a1b6bb281c3884 13-17
+  s_19629b08d40df4::t_56cfe8a0c3c26f 1-12,18-24,28-34,40-46,51-57,63-69,75-81,85-96
+  s_a9a555b4b26379::t_2b12545da7c355 70-74
+  s_a9a555b4b26379::t_64257f0d8c099f 47-50
+  s_a9a555b4b26379::t_f6db70bd2ebe00 25-27
+shared/src/models/npc.ts
+  s_19629b08d40df4::t_df16d951df9fae 1-40
+frontend/src/config.ts
+  s_19629b08d40df4::t_b1007fc1f015dc 7-8
+  s_a9a555b4b26379::t_da3a112dce0d5b 1-6,9
+frontend/package.json
+  s_19629b08d40df4::t_6b2f7adbeecdbe 7-9
+frontend/src/app/share/[id]/page.tsx
+  s_a9a555b4b26379::t_5b0d7875aebd20 1-44
+resources/assets/README.md
+  s_19629b08d40df4::t_4a1259bc4b430b 1-27
+demos/demo-b-illustrated.html
+  s_19629b08d40df4::t_ff45544a5c1247 1-147
+frontend/src/app/globals.css
+  s_a9a555b4b26379::t_8b6b12e7b90f4e 1-25
+docs/Atlas-路过-后端开发规范.md
+  s_19629b08d40df4::t_c108637605dda9 1-157,190-196
+  s_19629b08d40df4::t_55231a5b4dd46d 158-189
+docs/Atlas-路过-协作开发规范.md
+  s_19629b08d40df4::t_a90afd6db2402d 1-127
+backend/src/ops/ops.controller.ts
+  s_81790e42c6bc6a::t_461a6fe881516f 1-21
+shared/src/models/index.ts
+  s_19629b08d40df4::t_55274f716d898f 5
+  s_19629b08d40df4::t_ba47b8755301f2 1,3-4
+  s_19629b08d40df4::t_8f78f52f07ae74 2
+shared/package.json
+  s_19629b08d40df4::t_22d516912ccdeb 1-27
+shared/src/seed/dataset.ts
+  s_19629b08d40df4::t_ffd8e74a272201 128
+  s_19629b08d40df4::t_897280b5209358 178 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3281e6569fb2ffbf0cc19a","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":178}]}]}
+  s_19629b08d40df4::t_90158268766931 572-578 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a328266569fb2ffbf0cc1ac","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[572,578]}]}]}
+  s_19629b08d40df4::t_f467768fcd90a6 193 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3281f1569fb2ffbf0cc19d","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":193}]}]}
+  s_19629b08d40df4::t_5d9a6df651eec5 255 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a328258569fb2ffbf0cc1a9","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":255}]}]}
+  s_19629b08d40df4::t_e1bea05ab70eba 134-148 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3281b3569fb2ffbf0cc194","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[134,148]}]}]}
+  s_19629b08d40df4::t_b370a13bb270e1 223 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a328244569fb2ffbf0cc1a3","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":223}]}]}
+  s_19629b08d40df4::t_9d157325ef6712 172
+  s_19629b08d40df4::t_2c749a7e088b2e 232
+  s_19629b08d40df4::t_1573fdbd204f03 3-4,8,26,90,122,124-127,129-131,151,153-156,158-160,166,168-171,173-175,181,183-186,188-190,196,198-201,203-206,211,213-216,218-220,224-231,233-238,240-247,249-254,260,262-263,265,272-273,275,279,282-283,285,289-310,312,314,316-317,319,326-327,329,333-344,346,348,350-351,353,360-361,363,367,369,371-372,374,379-388,391-392,394,396,398-409,411,414-415,417,419-420,422,424,426-427,429,435,437-438,440,447-451,453,455-456,461-467,472,474-475,479,482,484-485,487-495,498,501,503-504,509-510,512-522,525,527-528,532,535,537-538,544-547,549-551,563-569,579,581,583-590,593,595,597,600,602,604,607,609,611,617,619-620,622-632,637-644,647,649-651,655,657-659
+  s_19629b08d40df4::t_d55810129746cd 157
+  s_19629b08d40df4::t_ebb67e5d4258d9 113-116
+  s_19629b08d40df4::t_8be5554cd4bd26 187
+  s_19629b08d40df4::t_dfdf26d625fedc 1-2,5-7,9-17,19-25,32-33,37,88-89,91-101,117-121,123,132-133,149-150,152,161-162,164-165,167,176-177,179-180,182,191-192,194-195,197,207,209-210,212,221-222,256-259,261,264,266-271,274,276-278,280-281,284,286-288,311,313,315,318,320-325,328,330-332,345,347,349,352,354-359,362,364-366,368,370,373,375-378,389-390,393,395,397,410,412-413,416,418,421,423,425,428,430-434,436,439,441-446,452,454,457-460,468-471,473,476-478,480-481,483,486,496-497,499-500,502,505-508,511,523-524,526,529-531,533-534,536,539-543,548,552-562,580,582,591-592,594,596,598-599,601,603,605-606,608,610,612-616,618,621,633-636,645-646,648,652-654,656,660-663
+  s_19629b08d40df4::t_a0a3573045c8fe 202
+  s_19629b08d40df4::t_f989f7b41c8c70 208 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3281fe569fb2ffbf0cc1a0","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":208}]}]}
+  s_19629b08d40df4::t_a253e3676a4226 217
+  s_19629b08d40df4::t_5dfe0216088717 18,27-31,34-36,38-87,102-112
+  s_19629b08d40df4::t_cb2bf9515185d0 163 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3281da569fb2ffbf0cc197","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":163}]}]}
+  s_19629b08d40df4::t_22f9ec6590aa1e 239 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a32824e569fb2ffbf0cc1a6","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":239}]}]}
+  s_19629b08d40df4::t_a6bd43a9b624db 248
+backend/src/content/content.module.ts
+  s_81790e42c6bc6a::t_2d4b1899d042a3 1-9
+frontend/src/components/domain/RewardPopup.tsx
+  s_a9a555b4b26379::t_9812b64be5dba8 1-32
+frontend/src/services/authApi.ts
+  s_19629b08d40df4::t_bc2a77856ea938 1-70
+docs/Atlas-路过-NPC对话系统设计.md
+  s_19629b08d40df4::t_051e9c47cd81f1 1-274
+.eslintrc.cjs
+  s_19629b08d40df4::t_1beb438902d007 1-19
+frontend/src/scenes/components/SpotScene.tsx
+  s_a9a555b4b26379::t_9c109dfeaeecbe 1-4,6-24,26-27,32-58
+  s_19629b08d40df4::t_f17fa363258c87 5
+  s_19629b08d40df4::t_293fa70af809c7 25,28-31
+backend/src/ops/ops.service.ts
+  s_81790e42c6bc6a::t_a64f140368041d 1-46
+shared/README.md
+  s_19629b08d40df4::t_f5a172efa47552 1-110
+frontend/src/stores/uiStore.ts
+  s_a9a555b4b26379::t_e1057ad0ae5351 1-45
+docs/Atlas-路过-素材资源方案.md
+  s_19629b08d40df4::t_bb67d87b9aec5b 1-38,40,43-44,46,51-52,57-59,61,96-99,101-102,105,107-109,111,114,119,123-130
+  s_19629b08d40df4::t_c2b8e746771b71 39,41-42,45,47-50,53-56,60,62-66,80-95,100,103-104,106,110,112-113,115-118,120-122
+  s_a9a555b4b26379::t_2844d6d4c0d5c7 67-79
+backend/src/me/me.module.ts
+  s_81790e42c6bc6a::t_1345d2ffa157ca 1-9
+shared/src/contracts/index.ts
+  s_19629b08d40df4::t_875f131ab27f8d 1-3,5-7
+  s_19629b08d40df4::t_b270850bd91464 4
+  s_19629b08d40df4::t_9f74e881665cbd 8
+frontend/src/app/layout.tsx
+  s_a9a555b4b26379::t_c47ceeb3eca7c5 17,19-21,23
+  s_a9a555b4b26379::t_61692fcc978e50 1-16,18,22,24-33
+frontend/src/app/generated/page.tsx
+  s_a9a555b4b26379::t_8764418f650304 1-40
+shared/src/enums.ts
+  s_19629b08d40df4::t_c4fdadbde97c6b 119-139
+  s_19629b08d40df4::t_c8800fe300c144 16-20,22,24,26,30-36
+  s_19629b08d40df4::t_64d5c52552a627 1-15,21,23,25,27-29,37-118
+frontend/src/stores/authStore.ts
+  s_19629b08d40df4::t_a7763419887b58 2-3,5,7,9-14,21-29
+  s_a9a555b4b26379::t_5f6ea1e69c546e 1,4,6,8,15-20,30-31
+backend/README.md
+  s_81790e42c6bc6a::t_e19a399b85bf6e 1-70
+shared/src/contracts/auth.ts
+  s_19629b08d40df4::t_19160d1aff3494 1-35
+package.json
+  s_19629b08d40df4::t_d9989de1542407 1-11,24-25
+  s_19629b08d40df4::t_6068b75aaec8aa 12-16,18
+  s_a9a555b4b26379::t_51939a76166703 22
+  s_19629b08d40df4::t_022d1741b22875 20-21,23
+  s_19629b08d40df4::t_46596194922dba 17,19
+frontend/src/services/httpClient.ts
+  s_19629b08d40df4::t_13bda806223bc0 3,6-11,14,27,55
+  s_a9a555b4b26379::t_88832b4dab4380 1-2,4-5,12-13,15-26,28-54,56-64
+shared/src/models/auth.ts
+  s_19629b08d40df4::t_57315b170a384c 1-12
+.env.example
+  s_19629b08d40df4::t_4008cd86bba083 6-14
+  s_19629b08d40df4::t_671c33e6846ece 22-27
+  s_19629b08d40df4::t_47320dc554163d 32-33
+  s_19629b08d40df4::t_22d7b2b05702e9 1-5,15,19-21,28-29,31,34-44
+  s_19629b08d40df4::t_e72710e9563157 16-18,30
+backend/src/reward/reward.module.ts
+  s_a9a555b4b26379::t_597787f18991e5 1-9
+README.md
+  s_19629b08d40df4::t_e761b9691ecfc2 36-51,54
+  s_19629b08d40df4::t_9cb43f1c0152c4 19-34,52-53,55,57-73,75-81
+  s_19629b08d40df4::t_5202c9f52fa914 1-18,35,56,74
+shared/tsconfig.json
+  s_19629b08d40df4::t_5a262ba04ccbc0 1-21
+frontend/src/components/shell/AppHeader.tsx
+  s_19629b08d40df4::t_c66cdc868e3e77 4,6,17,19,21-29,57-73
+  s_a9a555b4b26379::t_4f83c430e34499 1-3,5,7-16,18,20,30-56,74-76
+frontend/next.config.js
+  s_a9a555b4b26379::t_8139c48121e79e 1-8
+frontend/src/stores/progressStore.ts
+  s_a9a555b4b26379::t_cc1b15bb7efbbc 1-22
+shared/src/errors.ts
+  s_19629b08d40df4::t_5b494544b02a4e 21-26,52-54
+  s_19629b08d40df4::t_bba5b4ba50a469 27-32,55-57
+  s_19629b08d40df4::t_f862cd873d81d7 1-20,39-51,61
+  s_19629b08d40df4::t_d59db6b3cd741f 33-38
+  s_19629b08d40df4::t_70cb90367f28b3 58-60
+frontend/src/app/spot/[id]/page.tsx
+  s_a9a555b4b26379::t_601050f7297c63 1-28
+backend/src/action/action.service.ts
+  s_81790e42c6bc6a::t_705cad9f16b069 1-180
+backend/src/ops/ops.module.ts
+  s_81790e42c6bc6a::t_4eaba4881941ab 1,3-10,12-15
+  s_81790e42c6bc6a::t_def46a5a98f185 2,11
+frontend/src/utils/id.ts
+  s_a9a555b4b26379::t_7dc51c1ecf1beb 1-12
+frontend/src/components/domain/EncounterPanel.tsx
+  s_a9a555b4b26379::t_b0305a6162880f 1-69
+shared/src/geo/projection.ts
+  s_19629b08d40df4::t_b94729d1330ee9 1-55
+frontend/next-env.d.ts
+  s_a9a555b4b26379::t_05b114bc8b3d47 1-5
+backend/src/app.module.ts
+  s_19629b08d40df4::t_74d5eef3dd946b 1,12-13,19-20,26,38-42
+  s_81790e42c6bc6a::t_44e402c16657b3 2-11,14-18,21-25,27-37
+backend/src/ai/ai.service.ts
+  s_81790e42c6bc6a::t_9e305a821bd2f0 1-199
+frontend/src/hooks/useExecuteAction.ts
+  s_a9a555b4b26379::t_091bfa15e19c74 1-96
+tasks/00-公共部分.md
+  s_19629b08d40df4::t_088d5b8d4da2c7 12
+  h_c3ebd27e3f6b60 13-15,25-28,38-43,51-52,60-62,70-72
+  s_19629b08d40df4::t_2ea3eac075bc8b 1-11,16-24,29-37,44-50,53-59,63-69,73-84
+tasks/04-区域DAG-后端.md
+  s_81790e42c6bc6a::t_5a649e17663387 82-85
+  s_81790e42c6bc6a::t_6d28a72482ddd0 55-59,62-63,69-70,72,74,76
+  s_19629b08d40df4::t_77715388349654 1-54,60-61,64-68,71,73,75,77-81,86-87
+shared/src/models/ai.ts
+  s_19629b08d40df4::t_310e5fd6ae9c17 1-39
+frontend/src/components/shell/AppFooter.tsx
+  s_a9a555b4b26379::t_66b176be5d7aa2 1-8
+backend/scripts/smoke.mjs
+  s_81790e42c6bc6a::t_92d569e06bcdff 46,49-50,52-83,85-86
+  s_81790e42c6bc6a::t_543ee1bf223b3d 138,145
+  s_81790e42c6bc6a::t_785dd4a38fc5c0 1-45,47-48,51,84,87-137,139-144,146-198
+backend/src/action/action.module.ts
+  s_81790e42c6bc6a::t_6c1b7c861c78d4 1-18
+frontend/src/stores/actionStore.ts
+  s_a9a555b4b26379::t_5ac4d50c663138 1-37
+backend/src/progress/progress.service.ts
+  s_81790e42c6bc6a::t_d30de5f2b07e9e 1-92
+frontend/src/app/providers.tsx
+  s_a9a555b4b26379::t_77ccaf05dd2cb6 1-5,7-31,33
+  s_19629b08d40df4::t_ee6ea2eff83c63 6,32
+backend/src/content/content.controller.ts
+  s_81790e42c6bc6a::t_1ff45e852d371a 1-47
+backend/src/event/event.service.ts
+  s_81790e42c6bc6a::t_7086096136e8e4 1-56
+frontend/src/hooks/useContentQueries.ts
+  s_a9a555b4b26379::t_e743b130367c1e 1-68
+tasks/01-后端.md
+  s_81790e42c6bc6a::t_1b7e39a18324e3 16-20
+  s_81790e42c6bc6a::t_8aad3d3df3f1c8 77-78
+  s_81790e42c6bc6a::t_4c27e461334445 7-10
+  s_81790e42c6bc6a::t_ca322d08448157 41-46
+  s_81790e42c6bc6a::t_f94a0fdf61cc0f 28-33
+  s_19629b08d40df4::t_f0a003651b76cf 1-6,11-15,21-27,34-40,47-53,60-66,70-76,79-85,89-90
+  s_81790e42c6bc6a::t_55938fd4114745 54-59
+  s_81790e42c6bc6a::t_5ccccb62a96319 67-69
+  s_81790e42c6bc6a::t_be4a2a8125564a 86-88
+frontend/src/components/domain/GeneratedPhotoPreview.tsx
+  s_a9a555b4b26379::t_ea892708f23dc2 1-55
+backend/src/health.controller.ts
+  s_81790e42c6bc6a::t_c3411ee4c12657 1-12
+frontend/tsconfig.json
+  s_a9a555b4b26379::t_96d82bd5dc2de0 1-24
+frontend/src/app/login/page.tsx
+  s_19629b08d40df4::t_0d23b75f0cf768 1-127
+shared/src/contracts/me.ts
+  s_19629b08d40df4::t_b708a0a3e2090b 1-40
+frontend/src/components/shell/AuthGuard.tsx
+  s_19629b08d40df4::t_b65959abb3fc38 1-38
+frontend/src/utils/assets.ts
+  s_a9a555b4b26379::t_1ab61b08e0bed5 13
+  s_a9a555b4b26379::t_3b9fd80c4589d7 1,11-12,16-19,27-28,33,35-38,42-43,46,48-51,54-59,62,100
+  s_19629b08d40df4::t_9fbf54b0e93d8a 2-10,14-15,20-26,29-32,34,39-41,44-45,47,52-53,60-61,63-81,96-99
+  s_a9a555b4b26379::t_7c3b307a6c2197 84-95
+shared/src/models/content.ts
+  s_19629b08d40df4::t_ddf2da827a37f4 21-40,72-75
+  s_19629b08d40df4::t_4c77ae67fdd7e9 11,41-56,66-71,99-102
+  s_19629b08d40df4::t_1aa002fe0a6357 84-95,117-120
+  s_19629b08d40df4::t_ed554415ece782 107,109-110
+  s_19629b08d40df4::t_19eef71bb065f5 1-10,12-20,57-65,76-83,96-98,103-106,108,111-116,121-189
+frontend/src/services/mock/mockApi.ts
+  s_a9a555b4b26379::t_8ee9cc327930e3 26
+  s_19629b08d40df4::t_56cb02d7633045 312
+  s_a9a555b4b26379::t_4de98f616ceda7 144-149,156-159,161-173
+  s_a9a555b4b26379::t_f0f53d50325376 6
+  s_a9a555b4b26379::t_c23085ada52a52 160,174
+  s_19629b08d40df4::t_53cc9e43b42817 354
+  s_a9a555b4b26379::t_b67aeda8fb52ce 1-5,7-25,27-143,150-155,175-311,313-353,355-381
+shared/src/contracts/content.ts
+  s_19629b08d40df4::t_28f6d5bf254d5a 1-19,21-25,30-31,35-57
+  s_19629b08d40df4::t_98589d20c88122 20,26-29,32-34
+docs/Atlas-路过-前端开发规范.md
+  s_19629b08d40df4::t_e4702a391a1af0 1-152,174-179
+  s_19629b08d40df4::t_e587079196fb28 153-173
+backend/nest-cli.json
+  s_81790e42c6bc6a::t_6745ab4d97c0a7 1-8
+frontend/src/services/errors.ts
+  s_a9a555b4b26379::t_362810ecc7347b 1-32,39-45
+  s_19629b08d40df4::t_4973b9f227e368 33-38
+backend/src/common/response.interceptor.ts
+  s_81790e42c6bc6a::t_efc580be721286 1-22
+shared/src/index.ts
+  s_19629b08d40df4::t_20c9898cd2f113 10
+  s_19629b08d40df4::t_e67c98cf02f325 1-9,11
+scripts/asset-server.mjs
+  s_19629b08d40df4::t_970119708934e2 10,12
+  s_19629b08d40df4::t_cfcde7cd6ce98d 1-9,11,13-23,25-80,86
+  s_19629b08d40df4::t_3f6c948bce77a4 24
+  s_19629b08d40df4::t_f360fed0b6b44c 81-85
+backend/src/auth/token.service.ts
+  s_19629b08d40df4::t_5cc6c933d66f39 1-52
+backend/src/me/me.controller.ts
+  s_81790e42c6bc6a::t_86b36a386f0dad 1-31
+backend/src/auth/auth.controller.ts
+  s_19629b08d40df4::t_915032971f75b9 1-41
+backend/.gitignore
+  s_81790e42c6bc6a::t_f8e61c3326c0d4 1-3
+  s_19629b08d40df4::t_6318f018bc8d5b 4
+backend/src/ai/ai.controller.ts
+  s_81790e42c6bc6a::t_7f8accf6feb906 1-60
+frontend/src/app/world/page.tsx
+  s_a9a555b4b26379::t_ccd979382c4649 1-20
+backend/src/auth/auth.module.ts
+  s_19629b08d40df4::t_a9d48171a9fe2a 1-17
+frontend/src/stores/sceneStore.ts
+  s_a9a555b4b26379::t_ec91776f074b0a 46-47
+  s_a9a555b4b26379::t_0d64eaaece47bc 6-9,34-35,38,49,51-54,63-65,74,84-92,94-97,101,107-108,110-111,113-136,138-156,160
+  s_a9a555b4b26379::t_9dfc973192789d 36-37,45,50,66-71,75,83,93,105-106,109,112
+  s_a9a555b4b26379::t_3eb10fa4aca558 102-104
+  s_a9a555b4b26379::t_2d8b59bcfaf917 1-5,10-33,39-44,48,55-62,72-73,76-82,98-100,137,157-159,161-173
+.editorconfig
+  s_19629b08d40df4::t_d8fe28fe46cdf8 1-12
+frontend/src/components/domain/ActionPanel.tsx
+  s_a9a555b4b26379::t_b6cc5e85e70745 1-86
+shared/src/seed/index.ts
+  s_19629b08d40df4::t_c01185a4ce7039 1-2
+frontend/src/scenes/runtime/SceneRuntime.ts
+  s_a9a555b4b26379::t_8ebe5639fea458 249-256
+  s_a9a555b4b26379::t_5ff12e2ba982a4 29-30
+  s_a9a555b4b26379::t_c5eb6cedd4044c 96
+  s_a9a555b4b26379::t_6bd3f17b0794d2 118-119,134-135
+  s_a9a555b4b26379::t_59180639b0e4f8 26-27
+  s_a9a555b4b26379::t_c9a892b98d0276 1-2,4-5,7-25,28,31-42,46-47,49-63,68-83,116-117,121-133,205-248,257-265
+  s_a9a555b4b26379::t_609e6eb0ba3455 120,136-204
+  s_a9a555b4b26379::t_961e6c020fe8c2 43-45,48,64-67,84-95,97-115
+  s_a9a555b4b26379::t_0b6ed8332a2c76 3,6
+tasks/03-地图坐标-前端.md
+  s_19629b08d40df4::t_fed12cd27f871b 1-116
+tasks/05-NPC对话-后端.md
+  s_19629b08d40df4::t_84daab572afad5 1-136
+backend/src/config/config.module.ts
+  s_81790e42c6bc6a::t_9a41a5ee4334a2 2
+  s_81790e42c6bc6a::t_d629eacb5667df 1,3-9
+frontend/src/scenes/camera/Camera.ts
+  s_a9a555b4b26379::t_c6ca2693b38d5a 1-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "b48fd46ade936d076611a59dbc81a1b1afad1367",
+  "prompts": {},
+  "humans": {
+    "h_c3ebd27e3f6b60": {
+      "author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    }
+  },
+  "sessions": {
+    "s_19629b08d40df4": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a311db4daeaef2db5f9dfc2",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    },
+    "s_81790e42c6bc6a": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316cf6569fb2ffbf0cb471",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    },
+    "s_a9a555b4b26379": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316917569fb2ffbf0cb402",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    }
+  },
+  "attestation_metadata": {
+    "shared/src/seed/dataset.ts": [
+      {
+        "hash": "s_19629b08d40df4::t_897280b5209358",
+        "line_ranges": [
+          {
+            "Single": 178
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3281e6569fb2ffbf0cc19a",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 178
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_19629b08d40df4::t_90158268766931",
+        "line_ranges": [
+          {
+            "Range": [
+              572,
+              578
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a328266569fb2ffbf0cc1ac",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  572,
+                  578
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_19629b08d40df4::t_f467768fcd90a6",
+        "line_ranges": [
+          {
+            "Single": 193
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3281f1569fb2ffbf0cc19d",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 193
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_19629b08d40df4::t_5d9a6df651eec5",
+        "line_ranges": [
+          {
+            "Single": 255
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a328258569fb2ffbf0cc1a9",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 255
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_19629b08d40df4::t_e1bea05ab70eba",
+        "line_ranges": [
+          {
+            "Range": [
+              134,
+              148
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3281b3569fb2ffbf0cc194",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  134,
+                  148
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_19629b08d40df4::t_b370a13bb270e1",
+        "line_ranges": [
+          {
+            "Single": 223
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a328244569fb2ffbf0cc1a3",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 223
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_19629b08d40df4::t_f989f7b41c8c70",
+        "line_ranges": [
+          {
+            "Single": 208
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3281fe569fb2ffbf0cc1a0",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 208
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_19629b08d40df4::t_cb2bf9515185d0",
+        "line_ranges": [
+          {
+            "Single": 163
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3281da569fb2ffbf0cc197",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 163
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_19629b08d40df4::t_22f9ec6590aa1e",
+        "line_ranges": [
+          {
+            "Single": 239
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a32824e569fb2ffbf0cc1a6",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 239
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/05-NPC对话-公共部分.md": [
+      {
+        "hash": "s_19629b08d40df4::t_50ec6e3f8414de",
+        "line_ranges": [
+          {
+            "Single": 23
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a32830d569fb2ffbf0cc1be",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 23
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remote_transcripts": {
+    "s_19629b08d40df4": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_22f9ec6590aa1e": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_50ec6e3f8414de": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_5d9a6df651eec5": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_897280b5209358": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_90158268766931": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_b370a13bb270e1": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_cb2bf9515185d0": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_e1bea05ab70eba": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_f467768fcd90a6": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_f989f7b41c8c70": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    }
+  }
+}
