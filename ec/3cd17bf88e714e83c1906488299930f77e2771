@@ -1,0 +1,535 @@
+workers/03-后端开发者.md
+  s_19629b08d40df4::t_084d7105eed48a 1-94 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a201569fb2ffbf0ccc46","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,94]}]}]}
+workers/01-整体架构师.md
+  s_19629b08d40df4::t_663e6e4c4f0ed4 1-91 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a1d4569fb2ffbf0ccc06","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,91]}]}]}
+tasks/README.md
+  s_19629b08d40df4::t_239fb27e18b8d1 30-32 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a333569fb2ffbf0ccd74","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[30,32]}]}]}
+  s_19629b08d40df4::t_4573b2e5c45e6b 29
+tasks/08-LLM多Provider-公共部分.md
+  s_19629b08d40df4::t_5a5d7eea0ff29f 1-91 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a2c3569fb2ffbf0ccd05","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,91]}]}]}
+docs/Atlas-路过-LLM多Provider路由设计.md
+  s_19629b08d40df4::t_460f1f8f16825f 1-437 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a339f85569fb2ffbf0ccba1","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,437]}]}]}
+resources/assets/regions/region_china/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-25
+tasks/06-分层地图-前端.md
+  s_a9a555b4b26379::t_09a9d949cdd36d 49,56-57,60-62,65-66,69-70,81-86
+tasks/07-NPC内容扩充-skills.md
+  s_c4db2edb1b8df1::t_c6078194a26aaa 117-119,124,130,133,136,139,143
+  s_c4db2edb1b8df1::t_131861521b24dd 70-72
+  s_19629b08d40df4::t_5e193693535081 1-69,73-76,78-80,82-84,86-90,94-98,102-103,108-116,120-123,125-129,131-132,134-135,137-138,140-142,144-175,182-196
+  s_c4db2edb1b8df1::t_8b664e1a2d1177 77,81,85,91-93,99-101,104-107
+  s_c4db2edb1b8df1::t_c8c788f23ba01b 176-181
+scripts/gen-region-map.mjs
+  s_19629b08d40df4::t_722810b3e4d3f4 255-263
+  s_19629b08d40df4::t_23489c2ee60ec7 288-289,296
+  s_19629b08d40df4::t_190bc6c26f72c9 48-169
+tasks/06-分层地图-素材.md
+  s_19629b08d40df4::t_552d9b10ae32fd 80-86
+  s_19629b08d40df4::t_8a2b7fcb730618 39-41,44-45,48-49,52-53,55-56
+  s_19629b08d40df4::t_fde0b8a78a30b7 64-70
+frontend/src/app/world/page.tsx
+  s_a9a555b4b26379::t_d67dcddc1907ff 7,9-13,16-18,21-25
+resources/assets/regions/region_sichuan/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-27
+workers/02-前端开发者.md
+  s_19629b08d40df4::t_efe0b934dc94e6 1-92 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a1e8569fb2ffbf0ccc26","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,92]}]}]}
+backend/scripts/smoke.mjs
+  s_81790e42c6bc6a::t_b228d403b3369d 50
+frontend/src/scenes/components/SceneHud.tsx
+  s_a9a555b4b26379::t_51a7a999f68c24 43,47,64
+frontend/src/scenes/components/SceneStage.tsx
+  s_a9a555b4b26379::t_b988268ed29a5b 47-48,50,52,54
+tasks/03-地图坐标-前端.md
+  s_a9a555b4b26379::t_895a32b727f2bb 43-45,48,50,52,56,59-60,63-65,79-84,87-88,98-102
+resources/skills/npc_young_traveler.skill.json
+  s_c4db2edb1b8df1::t_eda78d1f63da5c 1-35
+resources/assets/regions/region_earth/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-26
+tasks/05-NPC对话-前端.md
+  s_a9a555b4b26379::t_54744a1e487e87 34,40,47-49,52,56,59-62,65-67,70-72,77-80
+frontend/src/scenes/mappers.ts
+  s_a9a555b4b26379::t_bc7dc56fc56764 8-10,16,20-24
+workers/04-skills开发者.md
+  s_19629b08d40df4::t_e804a51cf2f549 1-94 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a214569fb2ffbf0ccc66","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,94]}]}]}
+workers/05-景点和地图策划.md
+  s_19629b08d40df4::t_44221f0efbbdb9 1-126 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a229569fb2ffbf0ccc85","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,126]}]}]}
+resources/assets/regions/region_asia/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-24
+workers/README.md
+  h_c3ebd27e3f6b60 18-20
+  s_19629b08d40df4::t_f0df9366b1d28a 1-17,21-73 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a1c0569fb2ffbf0ccbeb","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,17]},{"Range":[21,73]}]}]}
+resources/skills/npc_foodie_local.skill.json
+  s_c4db2edb1b8df1::t_45de96b644709f 1-35
+tasks/08-LLM多Provider-前端.md
+  s_19629b08d40df4::t_b117c69dc94b59 1-101 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a313569fb2ffbf0ccd4f","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,101]}]}]}
+docs/Atlas-路过-素材资源方案.md
+  s_19629b08d40df4::t_f0f45bab938fa2 81-96
+tasks/04-区域DAG-前端.md
+  s_a9a555b4b26379::t_2e43a24624d2cc 54-55,58,61-64,67-68,70,74-75,78-79,91-96
+tasks/08-LLM多Provider-后端.md
+  s_19629b08d40df4::t_450f25f0dc82eb 1-202 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a33a2e7569fb2ffbf0ccd2a","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,202]}]}]}
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "ec3cd17bf88e714e83c1906488299930f77e2771",
+  "prompts": {},
+  "humans": {
+    "h_c3ebd27e3f6b60": {
+      "author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    }
+  },
+  "sessions": {
+    "s_19629b08d40df4": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a311db4daeaef2db5f9dfc2",
+        "model": "gpt-5.4__max"
+      },
+      "human_author": null
+    },
+    "s_81790e42c6bc6a": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316cf6569fb2ffbf0cb471",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    },
+    "s_a9a555b4b26379": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316917569fb2ffbf0cb402",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    },
+    "s_c4db2edb1b8df1": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a339176569fb2ffbf0cc948",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    }
+  },
+  "attestation_metadata": {
+    "docs/Atlas-路过-LLM多Provider路由设计.md": [
+      {
+        "hash": "s_19629b08d40df4::t_460f1f8f16825f",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              437
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a339f85569fb2ffbf0ccba1",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  437
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/08-LLM多Provider-公共部分.md": [
+      {
+        "hash": "s_19629b08d40df4::t_5a5d7eea0ff29f",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              91
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a2c3569fb2ffbf0ccd05",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  91
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/08-LLM多Provider-前端.md": [
+      {
+        "hash": "s_19629b08d40df4::t_b117c69dc94b59",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              101
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a313569fb2ffbf0ccd4f",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  101
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/08-LLM多Provider-后端.md": [
+      {
+        "hash": "s_19629b08d40df4::t_450f25f0dc82eb",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              202
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a2e7569fb2ffbf0ccd2a",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  202
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/README.md": [
+      {
+        "hash": "s_19629b08d40df4::t_239fb27e18b8d1",
+        "line_ranges": [
+          {
+            "Range": [
+              30,
+              32
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a333569fb2ffbf0ccd74",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  30,
+                  32
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "workers/01-整体架构师.md": [
+      {
+        "hash": "s_19629b08d40df4::t_663e6e4c4f0ed4",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              91
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a1d4569fb2ffbf0ccc06",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  91
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "workers/02-前端开发者.md": [
+      {
+        "hash": "s_19629b08d40df4::t_efe0b934dc94e6",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              92
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a1e8569fb2ffbf0ccc26",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  92
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "workers/03-后端开发者.md": [
+      {
+        "hash": "s_19629b08d40df4::t_084d7105eed48a",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              94
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a201569fb2ffbf0ccc46",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  94
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "workers/04-skills开发者.md": [
+      {
+        "hash": "s_19629b08d40df4::t_e804a51cf2f549",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              94
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a214569fb2ffbf0ccc66",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  94
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "workers/05-景点和地图策划.md": [
+      {
+        "hash": "s_19629b08d40df4::t_44221f0efbbdb9",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              126
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a229569fb2ffbf0ccc85",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  126
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "workers/README.md": [
+      {
+        "hash": "s_19629b08d40df4::t_f0df9366b1d28a",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              17
+            ]
+          },
+          {
+            "Range": [
+              21,
+              73
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a33a1c0569fb2ffbf0ccbeb",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  17
+                ]
+              },
+              {
+                "Range": [
+                  21,
+                  73
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remote_transcripts": {
+    "s_19629b08d40df4": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_084d7105eed48a": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_239fb27e18b8d1": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_44221f0efbbdb9": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_450f25f0dc82eb": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_460f1f8f16825f": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_5a5d7eea0ff29f": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_663e6e4c4f0ed4": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_b117c69dc94b59": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_e804a51cf2f549": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_efe0b934dc94e6": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_f0df9366b1d28a": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    }
+  }
+}
