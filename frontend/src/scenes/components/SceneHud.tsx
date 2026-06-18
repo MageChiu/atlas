@@ -18,7 +18,6 @@ export function SceneHud({ runtime }: { runtime: SceneRuntime | null }) {
   const regionId = useSceneStore((s) => s.currentRegionId);
   const spotId = useSceneStore((s) => s.currentSpotId);
   const backOneLevel = useSceneStore((s) => s.backOneLevel);
-  const backToWorld = useSceneStore((s) => s.backToWorld);
   const goToRegionDepth = useSceneStore((s) => s.goToRegionDepth);
   const setRegionName = useSceneStore((s) => s.setRegionName);
   const beginTransition = useSceneStore((s) => s.beginTransition);
@@ -41,17 +40,11 @@ export function SceneHud({ runtime }: { runtime: SceneRuntime | null }) {
     endTransition();
   };
 
-  const handleBackToWorld = async () => {
-    beginTransition('back', SceneLevel.World);
-    if (runtime) await runtime.camera.transitionTo('back', { x: 1024, y: 768, zoom: 1 });
-    backToWorld();
-    endTransition();
-  };
-
+  // World 层只是加载态（方案 A 下 /world 会立即进入根「地球」）
   if (level === SceneLevel.World) {
     return (
       <div className="pointer-events-none absolute left-4 top-4 text-sm text-atlas-muted">
-        世界地图
+        加载中…
       </div>
     );
   }
@@ -61,12 +54,6 @@ export function SceneHud({ runtime }: { runtime: SceneRuntime | null }) {
 
   return (
     <div className="absolute left-4 top-4 flex flex-wrap items-center gap-1.5 text-sm">
-      <button
-        onClick={handleBackToWorld}
-        className="rounded bg-atlas-surface/80 px-3 py-1 text-atlas-muted backdrop-blur transition-colors hover:text-white"
-      >
-        世界
-      </button>
       {regionStack.map((id, i) => {
         const name = regionNames[id] ?? '…';
         const isLast = i === regionStack.length - 1;
@@ -74,7 +61,7 @@ export function SceneHud({ runtime }: { runtime: SceneRuntime | null }) {
         const isCurrent = isLast && atRegionLeaf;
         return (
           <span key={id} className="flex items-center gap-1.5">
-            <span className="text-atlas-muted">/</span>
+            {i > 0 && <span className="text-atlas-muted">/</span>}
             {isCurrent ? (
               <span className="px-1 text-white">{name}</span>
             ) : (

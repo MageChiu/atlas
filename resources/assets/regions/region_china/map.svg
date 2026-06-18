@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1470" width="2048" height="1470">
+  <defs>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3e6c8"/>
+      <stop offset="1" stop-color="#e4d3a8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#fff6df" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff6df" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceaf0"/>
+      <stop offset="1" stop-color="#c4dde6"/>
+    </linearGradient>
+  </defs>
+  <rect width="2048" height="1470" fill="url(#land)"/>
+  <polygon points="1486.5,1470.0 2048.0,1470.0 2048.0,490.0 1750.7,653.3 1585.5,980.0 1519.5,1306.7" fill="url(#ocean)" opacity=".95"/>
+  <polygon points="0.0,571.7 495.5,490.0 759.7,816.7 627.6,1061.7 363.4,1061.7 165.2,939.2 0.0,816.7" fill="#cdbf94" opacity=".7"/>
+  <polyline points="561.5,857.5 825.8,939.2 1057.0,980.0 1222.2,980.0 1420.4,939.2 1618.6,898.3" fill="none" stroke="#9fc6d8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+  <polyline points="759.7,775.8 957.9,735.0 1090.1,612.5 1222.2,694.2 1354.3,735.0 1519.5,653.3" fill="none" stroke="#bcae7d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+  <rect width="2048" height="1470" fill="url(#glow)"/>
+  <text x="2008" y="1434" text-anchor="end"
+        font-family="system-ui, PingFang SC, sans-serif" font-size="44"
+        fill="#9c8a5e" opacity=".5">中国 · CHINA</text>
+</svg>

@@ -181,6 +181,100 @@ MVP 无数据库：用户账户与会话持久化到后端本地 `cache/` 目录
 
 ---
 
+## 4.4 NPC 对话接口
+
+> 一期边界（08 公共冻结）：
+> - `ApiRoutes.dialogueStart / dialogueSay / dialogueSession` 路径**不变**
+> - 请求体与返回体本期**不新增必填字段**
+> - LLM provider 选择、路由、失败切换属于**后端内部能力**，前端不透传 `providerId/sceneId/routeHint`
+
+### 开始对话
+
+`POST /api/dialogue/start`
+
+请求示例：
+
+```json
+{
+  "spotId": "spot_dufu_thatched_cottage",
+  "npcId": "npc_dufu",
+  "requestId": "req_dialogue_start_001"
+}
+```
+
+返回示例：
+
+```json
+{
+  "success": true,
+  "data": {
+    "sessionId": "dlg_001",
+    "npc": {
+      "id": "npc_dufu",
+      "name": "杜甫",
+      "avatar": "npc/npc_dufu/avatar.png"
+    },
+    "opening": {
+      "role": "npc",
+      "content": "客从远方来，浣花溪畔风正清。",
+      "at": "2026-06-18T10:00:00.000Z"
+    }
+  }
+}
+```
+
+### 继续对话
+
+`POST /api/dialogue/{sessionId}/say`
+
+请求示例：
+
+```json
+{
+  "message": "给我讲讲春夜喜雨",
+  "requestId": "req_dialogue_say_001"
+}
+```
+
+返回示例：
+
+```json
+{
+  "success": true,
+  "data": {
+    "reply": {
+      "role": "npc",
+      "content": "好雨知时节，当春乃发生……",
+      "at": "2026-06-18T10:00:03.000Z"
+    },
+    "grants": [],
+    "status": "active"
+  }
+}
+```
+
+### 获取会话快照
+
+`GET /api/dialogue/{sessionId}`
+
+返回示例：
+
+```json
+{
+  "success": true,
+  "data": {
+    "sessionId": "dlg_001",
+    "npcId": "npc_dufu",
+    "spotId": "spot_dufu_thatched_cottage",
+    "status": "active",
+    "messages": [],
+    "grantedTriggerIds": []
+  }
+}
+```
+
+---
+
 ## 5. AI 接口
 
 ### 5.1 上传图片
@@ -262,6 +356,9 @@ MVP 无数据库：用户账户与会话持久化到后端本地 `cache/` 目录
 - `UPLOAD_INVALID`
 - `AI_TASK_FAILED`
 - `RISK_BLOCKED`
+- `DIALOGUE_SESSION_NOT_FOUND`
+- `DIALOGUE_SESSION_ENDED`
+- `LLM_UNAVAILABLE`
 
 框架级兜底错误码（非业务，由全局异常过滤器按 HTTP 状态映射）：
 

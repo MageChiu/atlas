@@ -44,12 +44,14 @@ export function SceneStage() {
       return world.regions.map((r, i) => regionStateToNode(r, i));
     }
     if (isRegion && region) {
-      // TF04-3：容器区域显示子区域入口 + 叶子区域显示景点，两类可并存
+      // TF04-3 / TF06-1：容器区域显示子区域入口 + 叶子区域显示景点，两类可并存。
+      // 子区域优先按自身 geo 投影到父底图（落在地理正确位置），否则 coord/索引兜底。
       const childEdges = region.region.children ?? [];
-      const regionNodes = region.childRegions.map((r, i) => {
+      const projectedRegions = region.childRegions.map((r, i) => {
         const coord = childEdges.find((c) => c.refId === r.id)?.coord;
-        return regionStateToNode(r, i, coord);
+        return regionStateToNode(r, i, coord, region.region);
       });
+      const regionNodes = deOverlapNodes(projectedRegions, 110);
       // TF-2：景点按经纬度投影定位；并对极近图钉做渲染期防重叠
       const projected = region.spots.map((s) => spotStateToNode(s, region.region));
       const spotNodes = deOverlapNodes(projected, 110);

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1455" width="2048" height="1455">
+  <defs>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3e6c8"/>
+      <stop offset="1" stop-color="#e4d3a8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#fff6df" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff6df" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceaf0"/>
+      <stop offset="1" stop-color="#c4dde6"/>
+    </linearGradient>
+  </defs>
+  <rect width="2048" height="1455" fill="url(#land)"/>
+  <polygon points="0.0,0.0 630.2,0.0 708.9,727.5 630.2,1273.1 0.0,1455.0" fill="#cdbf94" opacity=".75"/>
+  <polygon points="0.0,0.0 472.6,0.0 472.6,909.4 315.1,1455.0 0.0,1455.0" fill="#b9aa7d" opacity=".6"/>
+  <rect x="945" y="436"
+        width="473" height="400" rx="80"
+        fill="#efd9b0" opacity=".55"/>
+  <polyline points="945.2,72.7 992.5,327.4 1039.8,545.6 1087.0,654.8 1118.5,800.2 1150.0,945.7" fill="none" stroke="#9fc6d8" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+  <rect width="2048" height="1455" fill="url(#glow)"/>
+  <text x="2008" y="1419" text-anchor="end"
+        font-family="system-ui, PingFang SC, sans-serif" font-size="44"
+        fill="#9c8a5e" opacity=".5">四川 · SICHUAN</text>
+</svg>

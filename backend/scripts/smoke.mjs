@@ -47,7 +47,7 @@ async function main() {
   r = await call('GET', '/api/world');
   assert(r.data?.success && Array.isArray(r.data.data.regions), 'world returns regions');
   const rootIds = r.data.data.regions.map((x) => x.id);
-  assert(rootIds.length === 1 && rootIds[0] === 'region_asia', `world roots = ['region_asia'] (got ${JSON.stringify(rootIds)})`);
+  assert(rootIds.length === 1 && rootIds[0] === 'region_earth', `world roots = ['region_earth'] (got ${JSON.stringify(rootIds)})`);
 
   console.log('== region DAG drill-down ==');
   // 沿 childRegions 下钻到含景点的叶子区域

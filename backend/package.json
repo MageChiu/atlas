@@ -11,6 +11,7 @@
     "start:prod": "node dist/main.js",
     "smoke": "node scripts/smoke.mjs",
     "smoke:dialogue": "node scripts/smoke-dialogue.mjs",
+    "smoke:llm": "node scripts/smoke-llm.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {

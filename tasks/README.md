@@ -26,6 +26,10 @@
 | [06-分层地图-公共部分.md](./06-分层地图-公共部分.md) | 公共 | Region.geo / RegionType.World / region_earth / 容器层 geoBounds+mapSize+校验（先行） |
 | [06-分层地图-前端.md](./06-分层地图-前端.md) | 前端 | 拆分件（交前端 Agent）：World 并入区域栈、子区域 geo 投影、容器层底图渲染 |
 | [06-分层地图-素材.md](./06-分层地图-素材.md) | 素材 | 拆分件（交素材 Agent）：世界/亚洲/中国/四川 4 张底图 + 回填真实 mapSize |
+| [07-NPC内容扩充-skills.md](./07-NPC内容扩充-skills.md) | 内容/skills | 拆分件（交 NPC 内容 worker）：扩充 `.skill.json`，沉淀名人/游客样例与绑定建议，不改 LLM 后端方案 |
+| [08-LLM多Provider-公共部分.md](./08-LLM多Provider-公共部分.md) | 公共 | 冻结一期边界：多 Provider 路由属后端内部能力，本期默认不改对话 API 路径与必填字段 |
+| [08-LLM多Provider-后端.md](./08-LLM多Provider-后端.md) | 后端 | 拆分件（交后端 Agent）：结构化配置、多 Provider 池、registry/router、failover 骨架与统一 LlmService |
+| [08-LLM多Provider-前端.md](./08-LLM多Provider-前端.md) | 前端 | 拆分件（交前端 Agent）：保持 provider 无感知、兼容真实后端、处理 LLM_UNAVAILABLE 与可选上下文字段预留 |
 
 ### 开发规范（并行开发期间必读，约束性文档）
 

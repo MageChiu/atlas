@@ -29,8 +29,13 @@ import {
 import { RewardService } from '../reward/reward.service';
 import { RiskService } from '../ops/risk.service';
 import { NpcRepository } from './npc.repository';
-import { LLM_PROVIDER, type LlmChatMessage, type LlmProvider } from './llm/llm.provider';
-import { KNOWLEDGE_PREFIX } from './llm/mock-llm.provider';
+import {
+  LLM_SERVICE,
+  type LlmChatMessage,
+  type LlmRouteContext,
+} from './llm/llm.provider';
+import type { LlmService } from './llm/llm-service';
+import { KNOWLEDGE_PREFIX } from './llm/providers/mock.provider';
 
 /**
  * TB05-4 - 对话编排 + 收获判定。
@@ -50,8 +55,8 @@ export class DialogueService {
     private readonly sessions: DialogueSessionRepository,
     private readonly rewards: RewardService,
     private readonly risk: RiskService,
-    // 仅依赖抽象接口；具体实现由 token 注入
-    @Inject(LLM_PROVIDER) private readonly llm: LlmProvider,
+    // 仅依赖统一门面；多 provider 池 / 路由 / failover 收敛在 LlmService 内部
+    @Inject(LLM_SERVICE) private readonly llm: LlmService,
     private readonly state: StateRepository,
   ) {}
 
@@ -105,11 +110,14 @@ export class DialogueService {
 
     // 服务端组 system prompt + 历史 + 当前输入
     const messages = this.buildLlmMessages(npc, session, body.message);
+    // 后端从会话/seed 推导路由上下文，不要求前端透传
+    const ctx = this.buildRouteContext(userId, session);
     let replyText: string;
     try {
-      const result = await this.llm.chat({ messages });
+      const result = await this.llm.chat(ctx, { messages });
       replyText = result.text;
     } catch (err) {
+      if (err instanceof BusinessException) throw err;
       this.logger.error(`LLM chat failed: ${(err as Error).message}`);
       throw new BusinessException(ErrorCode.LLM_UNAVAILABLE, 'LLM service is unavailable');
     }
@@ -168,6 +176,19 @@ export class DialogueService {
     if (candidates.length === 0) return undefined;
     const signature = candidates.find((n) => n.kind === 'signature');
     return signature ?? candidates[0];
+  }
+
+  /** 构造 LLM 路由上下文：userId/feature 固定，cityId/regionId 由 spotId 经 seed 反查 */
+  private buildRouteContext(userId: string, session: DialogueSession): LlmRouteContext {
+    const spot = this.config.getSpot(session.spotId);
+    return {
+      userId,
+      feature: 'dialogue',
+      spotId: session.spotId,
+      npcId: session.npcId,
+      regionId: spot?.regionId,
+      cityId: this.config.getCityIdForSpot(session.spotId),
+    };
   }
 
   /** 组装发给 LLM 的消息：system(persona+knowledge+guardrails) + 历史 + 当前输入 */
