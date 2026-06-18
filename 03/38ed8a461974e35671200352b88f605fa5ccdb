@@ -1,0 +1,543 @@
+tasks/04-区域DAG-前端.md
+  s_a9a555b4b26379::t_2e43a24624d2cc 54-55,58,61-64,67-68,70,74-75,78-79,91-96 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a335f9e569fb2ffbf0cc7e6","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[54,55]},{"Single":58},{"Range":[61,64]},{"Range":[67,68]},{"Single":70},{"Range":[74,75]},{"Range":[78,79]},{"Range":[91,96]}]}]}
+scripts/gen-region-map.mjs
+  s_19629b08d40df4::t_722810b3e4d3f4 255-263
+  s_19629b08d40df4::t_190bc6c26f72c9 48-169
+  s_19629b08d40df4::t_23489c2ee60ec7 288-289,296
+frontend/src/scenes/components/SceneStage.tsx
+  s_a9a555b4b26379::t_b988268ed29a5b 47-48,50,52,54
+resources/assets/regions/region_sichuan/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-27
+docs/Atlas-路过-素材资源方案.md
+  s_19629b08d40df4::t_f0f45bab938fa2 81-96
+resources/assets/regions/region_china/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-25
+frontend/src/app/world/page.tsx
+  s_a9a555b4b26379::t_d67dcddc1907ff 7,9-13,16-18,21-25
+frontend/src/scenes/mappers.ts
+  s_a9a555b4b26379::t_bc7dc56fc56764 8-10,16,20-24
+tasks/06-分层地图-素材.md
+  s_19629b08d40df4::t_8a2b7fcb730618 39-41,44-45,48-49,52-53,55-56
+  s_19629b08d40df4::t_fde0b8a78a30b7 64-70
+  s_19629b08d40df4::t_552d9b10ae32fd 80-86
+tasks/03-地图坐标-前端.md
+  s_a9a555b4b26379::t_895a32b727f2bb 43-45,48,50,52,56,59-60,63-65,79-84,87-88,98-102 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a335f9b569fb2ffbf0cc7e3","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[43,45]},{"Single":48},{"Single":50},{"Single":52},{"Single":56},{"Range":[59,60]},{"Range":[63,65]},{"Range":[79,84]},{"Range":[87,88]},{"Range":[98,102]}]}]}
+resources/assets/regions/region_asia/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-24
+frontend/src/scenes/components/SceneHud.tsx
+  s_a9a555b4b26379::t_51a7a999f68c24 43,47,64
+tasks/06-分层地图-前端.md
+  s_a9a555b4b26379::t_09a9d949cdd36d 49,56-57,60-62,65-66,69-70,81-86 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a335fa0569fb2ffbf0cc7ec","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":49},{"Range":[56,57]},{"Range":[60,62]},{"Range":[65,66]},{"Range":[69,70]},{"Range":[81,86]}]}]}
+tasks/05-NPC对话-前端.md
+  s_a9a555b4b26379::t_54744a1e487e87 34,40,47-49,52,56,59-62,65-67,70-72,77-80 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a335f9f569fb2ffbf0cc7e9","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":34},{"Single":40},{"Range":[47,49]},{"Single":52},{"Single":56},{"Range":[59,62]},{"Range":[65,67]},{"Range":[70,72]},{"Range":[77,80]}]}]}
+resources/assets/regions/region_earth/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-26
+backend/scripts/smoke.mjs
+  s_81790e42c6bc6a::t_b228d403b3369d 50 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a336040569fb2ffbf0cc823","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":50}]}]}
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "0338ed8a461974e35671200352b88f605fa5ccdb",
+  "prompts": {},
+  "sessions": {
+    "s_19629b08d40df4": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a311db4daeaef2db5f9dfc2",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    },
+    "s_81790e42c6bc6a": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316cf6569fb2ffbf0cb471",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    },
+    "s_a9a555b4b26379": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316917569fb2ffbf0cb402",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    }
+  },
+  "attestation_metadata": {
+    "backend/scripts/smoke.mjs": [
+      {
+        "hash": "s_81790e42c6bc6a::t_b228d403b3369d",
+        "line_ranges": [
+          {
+            "Single": 50
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a336040569fb2ffbf0cc823",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 50
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/03-地图坐标-前端.md": [
+      {
+        "hash": "s_a9a555b4b26379::t_895a32b727f2bb",
+        "line_ranges": [
+          {
+            "Range": [
+              43,
+              45
+            ]
+          },
+          {
+            "Single": 48
+          },
+          {
+            "Single": 50
+          },
+          {
+            "Single": 52
+          },
+          {
+            "Single": 56
+          },
+          {
+            "Range": [
+              59,
+              60
+            ]
+          },
+          {
+            "Range": [
+              63,
+              65
+            ]
+          },
+          {
+            "Range": [
+              79,
+              84
+            ]
+          },
+          {
+            "Range": [
+              87,
+              88
+            ]
+          },
+          {
+            "Range": [
+              98,
+              102
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a335f9b569fb2ffbf0cc7e3",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  43,
+                  45
+                ]
+              },
+              {
+                "Single": 48
+              },
+              {
+                "Single": 50
+              },
+              {
+                "Single": 52
+              },
+              {
+                "Single": 56
+              },
+              {
+                "Range": [
+                  59,
+                  60
+                ]
+              },
+              {
+                "Range": [
+                  63,
+                  65
+                ]
+              },
+              {
+                "Range": [
+                  79,
+                  84
+                ]
+              },
+              {
+                "Range": [
+                  87,
+                  88
+                ]
+              },
+              {
+                "Range": [
+                  98,
+                  102
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/04-区域DAG-前端.md": [
+      {
+        "hash": "s_a9a555b4b26379::t_2e43a24624d2cc",
+        "line_ranges": [
+          {
+            "Range": [
+              54,
+              55
+            ]
+          },
+          {
+            "Single": 58
+          },
+          {
+            "Range": [
+              61,
+              64
+            ]
+          },
+          {
+            "Range": [
+              67,
+              68
+            ]
+          },
+          {
+            "Single": 70
+          },
+          {
+            "Range": [
+              74,
+              75
+            ]
+          },
+          {
+            "Range": [
+              78,
+              79
+            ]
+          },
+          {
+            "Range": [
+              91,
+              96
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a335f9e569fb2ffbf0cc7e6",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  54,
+                  55
+                ]
+              },
+              {
+                "Single": 58
+              },
+              {
+                "Range": [
+                  61,
+                  64
+                ]
+              },
+              {
+                "Range": [
+                  67,
+                  68
+                ]
+              },
+              {
+                "Single": 70
+              },
+              {
+                "Range": [
+                  74,
+                  75
+                ]
+              },
+              {
+                "Range": [
+                  78,
+                  79
+                ]
+              },
+              {
+                "Range": [
+                  91,
+                  96
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/05-NPC对话-前端.md": [
+      {
+        "hash": "s_a9a555b4b26379::t_54744a1e487e87",
+        "line_ranges": [
+          {
+            "Single": 34
+          },
+          {
+            "Single": 40
+          },
+          {
+            "Range": [
+              47,
+              49
+            ]
+          },
+          {
+            "Single": 52
+          },
+          {
+            "Single": 56
+          },
+          {
+            "Range": [
+              59,
+              62
+            ]
+          },
+          {
+            "Range": [
+              65,
+              67
+            ]
+          },
+          {
+            "Range": [
+              70,
+              72
+            ]
+          },
+          {
+            "Range": [
+              77,
+              80
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a335f9f569fb2ffbf0cc7e9",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 34
+              },
+              {
+                "Single": 40
+              },
+              {
+                "Range": [
+                  47,
+                  49
+                ]
+              },
+              {
+                "Single": 52
+              },
+              {
+                "Single": 56
+              },
+              {
+                "Range": [
+                  59,
+                  62
+                ]
+              },
+              {
+                "Range": [
+                  65,
+                  67
+                ]
+              },
+              {
+                "Range": [
+                  70,
+                  72
+                ]
+              },
+              {
+                "Range": [
+                  77,
+                  80
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/06-分层地图-前端.md": [
+      {
+        "hash": "s_a9a555b4b26379::t_09a9d949cdd36d",
+        "line_ranges": [
+          {
+            "Single": 49
+          },
+          {
+            "Range": [
+              56,
+              57
+            ]
+          },
+          {
+            "Range": [
+              60,
+              62
+            ]
+          },
+          {
+            "Range": [
+              65,
+              66
+            ]
+          },
+          {
+            "Range": [
+              69,
+              70
+            ]
+          },
+          {
+            "Range": [
+              81,
+              86
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a335fa0569fb2ffbf0cc7ec",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 49
+              },
+              {
+                "Range": [
+                  56,
+                  57
+                ]
+              },
+              {
+                "Range": [
+                  60,
+                  62
+                ]
+              },
+              {
+                "Range": [
+                  65,
+                  66
+                ]
+              },
+              {
+                "Range": [
+                  69,
+                  70
+                ]
+              },
+              {
+                "Range": [
+                  81,
+                  86
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remote_transcripts": {
+    "s_81790e42c6bc6a": {
+      "tool": "trae",
+      "conversation_id": "6a316cf6569fb2ffbf0cb471",
+      "session_id": "6a316cf6569fb2ffbf0cb471",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_81790e42c6bc6a::t_b228d403b3369d": {
+      "tool": "trae",
+      "conversation_id": "6a316cf6569fb2ffbf0cb471",
+      "session_id": "6a316cf6569fb2ffbf0cb471",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_a9a555b4b26379": {
+      "tool": "trae",
+      "conversation_id": "6a316917569fb2ffbf0cb402",
+      "session_id": "6a316917569fb2ffbf0cb402",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_a9a555b4b26379::t_09a9d949cdd36d": {
+      "tool": "trae",
+      "conversation_id": "6a316917569fb2ffbf0cb402",
+      "session_id": "6a316917569fb2ffbf0cb402",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_a9a555b4b26379::t_2e43a24624d2cc": {
+      "tool": "trae",
+      "conversation_id": "6a316917569fb2ffbf0cb402",
+      "session_id": "6a316917569fb2ffbf0cb402",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_a9a555b4b26379::t_54744a1e487e87": {
+      "tool": "trae",
+      "conversation_id": "6a316917569fb2ffbf0cb402",
+      "session_id": "6a316917569fb2ffbf0cb402",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_a9a555b4b26379::t_895a32b727f2bb": {
+      "tool": "trae",
+      "conversation_id": "6a316917569fb2ffbf0cb402",
+      "session_id": "6a316917569fb2ffbf0cb402",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    }
+  }
+}
