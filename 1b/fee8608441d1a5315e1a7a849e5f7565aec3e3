@@ -1,0 +1,626 @@
+workers/05-景点和地图策划.md
+  s_19629b08d40df4::t_04090affb38ef8 59-60,91-92,115
+  s_19629b08d40df4::t_44221f0efbbdb9 1-58,61-90,93-114,116-130
+backend/src/dialogue/llm/providers/openai-compatible.provider.ts
+  s_b5fcd4b8ed9fbe::t_d67f8edde1c48b 1-96
+backend/src/dialogue/llm/llm-router.ts
+  s_b5fcd4b8ed9fbe::t_bb0bad400688e6 1-106
+workers/README.md
+  s_19629b08d40df4::t_f0df9366b1d28a 1-17,21-64,67-75
+  s_19629b08d40df4::t_ba212227c46e80 65-66
+  h_c3ebd27e3f6b60 18-20
+tasks/05-NPC对话-前端.md
+  s_a9a555b4b26379::t_54744a1e487e87 34,40,47-49,52,56,59-62,65-67,70-72,77-80
+backend/src/dialogue/llm/llm-config.ts
+  s_b5fcd4b8ed9fbe::t_526cb20680cfca 1-327
+backend/scripts/smoke.mjs
+  s_81790e42c6bc6a::t_b228d403b3369d 50
+workers/04-skills开发者.md
+  s_19629b08d40df4::t_e804a51cf2f549 1-94
+backend/src/dialogue/dialogue.service.ts
+  s_b5fcd4b8ed9fbe::t_c18ce0f535a438 113-114,117,120
+  s_b5fcd4b8ed9fbe::t_fe047b94b4f1c4 58-59
+  s_b5fcd4b8ed9fbe::t_7614f36c3037d3 181-193
+  s_b5fcd4b8ed9fbe::t_cf54711ee70b12 32-38
+scripts/gen-region-map.mjs
+  s_19629b08d40df4::t_722810b3e4d3f4 255-263
+  s_19629b08d40df4::t_23489c2ee60ec7 288-289,296
+  s_19629b08d40df4::t_190bc6c26f72c9 48-169
+resources/skills/npc_young_traveler.skill.json
+  s_c4db2edb1b8df1::t_eda78d1f63da5c 1-35
+backend/src/store/config.repository.ts
+  s_b5fcd4b8ed9fbe::t_2160c3ae45043a 104-139
+  s_b5fcd4b8ed9fbe::t_1357ba09316a0a 2
+tasks/README.md
+  s_19629b08d40df4::t_4573b2e5c45e6b 29
+  s_19629b08d40df4::t_239fb27e18b8d1 30-32
+resources/skills/npc_foodie_local.skill.json
+  s_c4db2edb1b8df1::t_45de96b644709f 1-35
+frontend/src/app/world/page.tsx
+  s_a9a555b4b26379::t_d67dcddc1907ff 7,9-13,16-18,21-25
+tasks/08-LLM多Provider-后端.md
+  s_19629b08d40df4::t_450f25f0dc82eb 1-62,65-67,69,71-72,79,81-91,96-97,101,103-106,111-112,114,117,120,127,131-132,135-137,142,144-147,154,157-160,163-167,170,172-175,181-182,185-186,192-193,198,201-213
+  s_11f13d153cb35c::t_186df933d8630b 214-218 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3e32c4092199e1bef8dee6","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[214,218]}]}]}
+  s_11f13d153cb35c::t_820f73b63ab99f 80,92-95 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3e3279092199e1bef8dee0","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Single":80},{"Range":[92,95]}]}]}
+  s_11f13d153cb35c::t_0a991e405cc74e 98-100,102,107-110,113,115-116,118-119,121-126,128-130,133-134,138-140,143,148-153,155-156,161-162,168-169,171,176-180,183-184,187-191,194-197,199-200 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3e3289092199e1bef8dee3","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[98,100]},{"Single":102},{"Range":[107,110]},{"Single":113},{"Range":[115,116]},{"Range":[118,119]},{"Range":[121,126]},{"Range":[128,130]},{"Range":[133,134]},{"Range":[138,140]},{"Single":143},{"Range":[148,153]},{"Range":[155,156]},{"Range":[161,162]},{"Range":[168,169]},{"Single":171},{"Range":[176,180]},{"Range":[183,184]},{"Range":[187,191]},{"Range":[194,197]},{"Range":[199,200]}]}]}
+  s_11f13d153cb35c::t_e4ba17452ffe2f 63-64,68,70,73-77 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3e3262092199e1bef8dedd","tool_type":"agent","tool_id":"Edit","line_ranges":[{"Range":[63,64]},{"Single":68},{"Single":70},{"Range":[73,77]}]}]}
+backend/config/llm.example.json
+  s_b5fcd4b8ed9fbe::t_5401520ee985e2 1-60
+planning/新三国NPC试点规划.md
+  s_19629b08d40df4::t_226abbf77c7ae0 1-375 gitai:{"mixed_line_ranges":[],"operations":[{"operation_id":"6a3ded54092199e1bef8de92","tool_type":"agent","tool_id":"apply_patch","line_ranges":[{"Range":[1,375]}]}]}
+backend/src/dialogue/llm/llm-registry.ts
+  s_b5fcd4b8ed9fbe::t_c1e7f4f5a34194 1-55
+frontend/src/scenes/mappers.ts
+  s_a9a555b4b26379::t_bc7dc56fc56764 8-10,16,20-24
+tasks/08-LLM多Provider-公共部分.md
+  s_19629b08d40df4::t_5a5d7eea0ff29f 1-26,30-33,35-37,39-40,42-44,47-48,50-51,53-54,57-58,60-77,81-87,91-92
+  s_19629b08d40df4::t_3af7929bf7223c 27-29,34,38,41,45-46,49,52,55-56,59,78-80,88-90
+tasks/03-地图坐标-前端.md
+  s_a9a555b4b26379::t_895a32b727f2bb 43-45,48,50,52,56,59-60,63-65,79-84,87-88,98-102
+backend/src/dialogue/llm/llm-service.ts
+  s_b5fcd4b8ed9fbe::t_811ee8b26e283d 1-88
+docs/Atlas-路过-NPC对话系统设计.md
+  s_19629b08d40df4::t_051e9c47cd81f1 225
+  s_19629b08d40df4::t_fe2d3e5011966e 119-123,157-164,194-198,208-209,214-216,219-224,251,280,285
+tasks/06-分层地图-前端.md
+  s_a9a555b4b26379::t_09a9d949cdd36d 49,56-57,60-62,65-66,69-70,81-86
+workers/03-后端开发者.md
+  s_19629b08d40df4::t_084d7105eed48a 1-94
+backend/scripts/smoke-llm.mjs
+  s_b5fcd4b8ed9fbe::t_4108956470c2e8 1-189
+resources/assets/regions/region_china/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-25
+docs/Atlas-路过-API协议说明.md
+  s_19629b08d40df4::t_6b7a68f9ab1da8 184-277,359-361
+resources/assets/regions/region_asia/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-24
+planning/README.md
+  s_19629b08d40df4::t_55343f9718a29f 1-120
+backend/src/dialogue/llm/llm.provider.ts
+  s_81790e42c6bc6a::t_6608d67d430876 3-4
+  s_81790e42c6bc6a::t_48bb282d1a4036 2,60
+  s_81790e42c6bc6a::t_67cf08914c9e6f 25-59
+workers/01-整体架构师.md
+  s_19629b08d40df4::t_663e6e4c4f0ed4 1-91
+backend/src/dialogue/llm/mock-llm.provider.ts
+  s_b5fcd4b8ed9fbe::t_f9305b891f5157 2-3,5
+tasks/07-NPC内容扩充-skills.md
+  s_c4db2edb1b8df1::t_c6078194a26aaa 117-119,124,130,133,136,139,143
+  s_c4db2edb1b8df1::t_c8c788f23ba01b 176-181
+  s_19629b08d40df4::t_5e193693535081 1-69,73-76,78-80,82-84,86-90,94-98,102-103,108-116,120-123,125-129,131-132,134-135,137-138,140-142,144-175,182-196
+  s_c4db2edb1b8df1::t_8b664e1a2d1177 77,81,85,91-93,99-101,104-107
+  s_c4db2edb1b8df1::t_131861521b24dd 70-72
+docs/Atlas-路过-目录结构与文档分层规范.md
+  s_19629b08d40df4::t_fa027f9298dafe 1-136
+backend/package.json
+  s_b5fcd4b8ed9fbe::t_a649e97631cf80 14
+backend/src/dialogue/dialogue.module.ts
+  s_b5fcd4b8ed9fbe::t_c142f6c9059992 7-11,14-18,20-21,23-27,33
+docs/Atlas-路过-LLM多Provider路由设计.md
+  s_19629b08d40df4::t_460f1f8f16825f 1-437
+workers/02-前端开发者.md
+  s_19629b08d40df4::t_efe0b934dc94e6 1-92
+tasks/04-区域DAG-前端.md
+  s_a9a555b4b26379::t_2e43a24624d2cc 54-55,58,61-64,67-68,70,74-75,78-79,91-96
+backend/src/dialogue/llm/providers/mock.provider.ts
+  s_b5fcd4b8ed9fbe::t_fcb1945adc06a6 1-61
+resources/assets/regions/region_earth/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-26
+.env.example
+  s_b5fcd4b8ed9fbe::t_a44bad775046c5 46,49-54
+resources/assets/regions/region_sichuan/map.svg
+  s_19629b08d40df4::t_17b786330a325a 1-27
+tasks/08-LLM多Provider-前端.md
+  s_19629b08d40df4::t_b117c69dc94b59 1-101
+tasks/06-分层地图-素材.md
+  s_19629b08d40df4::t_8a2b7fcb730618 39-41,44-45,48-49,52-53,55-56
+  s_19629b08d40df4::t_fde0b8a78a30b7 64-70
+  s_19629b08d40df4::t_552d9b10ae32fd 80-86
+backend/src/config/app-config.service.ts
+  s_b5fcd4b8ed9fbe::t_20f30980a5f43e 34-39
+docs/Atlas-路过-素材资源方案.md
+  s_19629b08d40df4::t_f0f45bab938fa2 81-96
+frontend/src/scenes/components/SceneStage.tsx
+  s_a9a555b4b26379::t_b988268ed29a5b 47-48,50,52,54
+frontend/src/scenes/components/SceneHud.tsx
+  s_a9a555b4b26379::t_51a7a999f68c24 43,47,64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "1bfee8608441d1a5315e1a7a849e5f7565aec3e3",
+  "prompts": {},
+  "humans": {
+    "h_c3ebd27e3f6b60": {
+      "author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    }
+  },
+  "sessions": {
+    "s_11f13d153cb35c": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a33bc6c569fb2ffbf0cd12c",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    },
+    "s_19629b08d40df4": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a311db4daeaef2db5f9dfc2",
+        "model": "gpt-5.4__max"
+      },
+      "human_author": null
+    },
+    "s_81790e42c6bc6a": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316cf6569fb2ffbf0cb471",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    },
+    "s_a9a555b4b26379": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a316917569fb2ffbf0cb402",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": "zhaopeng.charles <zhaopeng.charles@bytedance.com>"
+    },
+    "s_b5fcd4b8ed9fbe": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a33a589569fb2ffbf0ccedb",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    },
+    "s_c4db2edb1b8df1": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a339176569fb2ffbf0cc948",
+        "model": "openrouter-3o__max"
+      },
+      "human_author": null
+    }
+  },
+  "attestation_metadata": {
+    "planning/新三国NPC试点规划.md": [
+      {
+        "hash": "s_19629b08d40df4::t_226abbf77c7ae0",
+        "line_ranges": [
+          {
+            "Range": [
+              1,
+              375
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3ded54092199e1bef8de92",
+            "tool_type": "agent",
+            "tool_id": "apply_patch",
+            "line_ranges": [
+              {
+                "Range": [
+                  1,
+                  375
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tasks/08-LLM多Provider-后端.md": [
+      {
+        "hash": "s_11f13d153cb35c::t_186df933d8630b",
+        "line_ranges": [
+          {
+            "Range": [
+              214,
+              218
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3e32c4092199e1bef8dee6",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  214,
+                  218
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_11f13d153cb35c::t_820f73b63ab99f",
+        "line_ranges": [
+          {
+            "Single": 80
+          },
+          {
+            "Range": [
+              92,
+              95
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3e3279092199e1bef8dee0",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Single": 80
+              },
+              {
+                "Range": [
+                  92,
+                  95
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_11f13d153cb35c::t_0a991e405cc74e",
+        "line_ranges": [
+          {
+            "Range": [
+              98,
+              100
+            ]
+          },
+          {
+            "Single": 102
+          },
+          {
+            "Range": [
+              107,
+              110
+            ]
+          },
+          {
+            "Single": 113
+          },
+          {
+            "Range": [
+              115,
+              116
+            ]
+          },
+          {
+            "Range": [
+              118,
+              119
+            ]
+          },
+          {
+            "Range": [
+              121,
+              126
+            ]
+          },
+          {
+            "Range": [
+              128,
+              130
+            ]
+          },
+          {
+            "Range": [
+              133,
+              134
+            ]
+          },
+          {
+            "Range": [
+              138,
+              140
+            ]
+          },
+          {
+            "Single": 143
+          },
+          {
+            "Range": [
+              148,
+              153
+            ]
+          },
+          {
+            "Range": [
+              155,
+              156
+            ]
+          },
+          {
+            "Range": [
+              161,
+              162
+            ]
+          },
+          {
+            "Range": [
+              168,
+              169
+            ]
+          },
+          {
+            "Single": 171
+          },
+          {
+            "Range": [
+              176,
+              180
+            ]
+          },
+          {
+            "Range": [
+              183,
+              184
+            ]
+          },
+          {
+            "Range": [
+              187,
+              191
+            ]
+          },
+          {
+            "Range": [
+              194,
+              197
+            ]
+          },
+          {
+            "Range": [
+              199,
+              200
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3e3289092199e1bef8dee3",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  98,
+                  100
+                ]
+              },
+              {
+                "Single": 102
+              },
+              {
+                "Range": [
+                  107,
+                  110
+                ]
+              },
+              {
+                "Single": 113
+              },
+              {
+                "Range": [
+                  115,
+                  116
+                ]
+              },
+              {
+                "Range": [
+                  118,
+                  119
+                ]
+              },
+              {
+                "Range": [
+                  121,
+                  126
+                ]
+              },
+              {
+                "Range": [
+                  128,
+                  130
+                ]
+              },
+              {
+                "Range": [
+                  133,
+                  134
+                ]
+              },
+              {
+                "Range": [
+                  138,
+                  140
+                ]
+              },
+              {
+                "Single": 143
+              },
+              {
+                "Range": [
+                  148,
+                  153
+                ]
+              },
+              {
+                "Range": [
+                  155,
+                  156
+                ]
+              },
+              {
+                "Range": [
+                  161,
+                  162
+                ]
+              },
+              {
+                "Range": [
+                  168,
+                  169
+                ]
+              },
+              {
+                "Single": 171
+              },
+              {
+                "Range": [
+                  176,
+                  180
+                ]
+              },
+              {
+                "Range": [
+                  183,
+                  184
+                ]
+              },
+              {
+                "Range": [
+                  187,
+                  191
+                ]
+              },
+              {
+                "Range": [
+                  194,
+                  197
+                ]
+              },
+              {
+                "Range": [
+                  199,
+                  200
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "hash": "s_11f13d153cb35c::t_e4ba17452ffe2f",
+        "line_ranges": [
+          {
+            "Range": [
+              63,
+              64
+            ]
+          },
+          {
+            "Single": 68
+          },
+          {
+            "Single": 70
+          },
+          {
+            "Range": [
+              73,
+              77
+            ]
+          }
+        ],
+        "mixed_line_ranges": [],
+        "operations": [
+          {
+            "operation_id": "6a3e3262092199e1bef8dedd",
+            "tool_type": "agent",
+            "tool_id": "Edit",
+            "line_ranges": [
+              {
+                "Range": [
+                  63,
+                  64
+                ]
+              },
+              {
+                "Single": 68
+              },
+              {
+                "Single": 70
+              },
+              {
+                "Range": [
+                  73,
+                  77
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remote_transcripts": {
+    "s_11f13d153cb35c": {
+      "tool": "trae",
+      "conversation_id": "6a33bc6c569fb2ffbf0cd12c",
+      "session_id": "6a33bc6c569fb2ffbf0cd12c",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_11f13d153cb35c::t_0a991e405cc74e": {
+      "tool": "trae",
+      "conversation_id": "6a33bc6c569fb2ffbf0cd12c",
+      "session_id": "6a33bc6c569fb2ffbf0cd12c",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_11f13d153cb35c::t_186df933d8630b": {
+      "tool": "trae",
+      "conversation_id": "6a33bc6c569fb2ffbf0cd12c",
+      "session_id": "6a33bc6c569fb2ffbf0cd12c",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_11f13d153cb35c::t_820f73b63ab99f": {
+      "tool": "trae",
+      "conversation_id": "6a33bc6c569fb2ffbf0cd12c",
+      "session_id": "6a33bc6c569fb2ffbf0cd12c",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_11f13d153cb35c::t_e4ba17452ffe2f": {
+      "tool": "trae",
+      "conversation_id": "6a33bc6c569fb2ffbf0cd12c",
+      "session_id": "6a33bc6c569fb2ffbf0cd12c",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    },
+    "s_19629b08d40df4::t_226abbf77c7ae0": {
+      "tool": "trae",
+      "conversation_id": "6a311db4daeaef2db5f9dfc2",
+      "session_id": "6a311db4daeaef2db5f9dfc2",
+      "status": "remote_only",
+      "message": "Remote transcript resolution is not implemented yet for TRAE prompts."
+    }
+  }
+}
