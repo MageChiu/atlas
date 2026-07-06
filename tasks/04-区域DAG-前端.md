@@ -51,32 +51,32 @@ World 入口 → region_asia(亚洲)
 ## 3. 任务
 
 ### TF04-1 Mock 对齐新契约（`services/mock/mockApi.ts`）
-- [ ] `getWorld()`：用 `seedDataset.worldRootRegionIds` 解析出顶层区域，返回 `{ regions: 顶层区域[] }`。
-- [ ] `getRegion(regionId)`：返回 `{ region, childRegions, spots, progress? }`：
+- [x] `getWorld()`：用 `seedDataset.worldRootRegionIds` 解析出顶层区域，返回 `{ regions: 顶层区域[] }`。
+- [x] `getRegion(regionId)`：返回 `{ region, childRegions, spots, progress? }`：
   - `childRegions`：读 `region.children` 中 `refType==='region'` 的 refId，按 `orderIndex` 解析为 Region。
   - `spots`：读 `region.children` 中 `refType==='spot'` 的 refId，按 `orderIndex` 解析为 Spot；无 `children` 时回退 `s.regionId===regionId`。
-- [ ] 与真实接口结构完全一致（联调零字段改动）。
+- [x] 与真实接口结构完全一致（联调零字段改动）。
 
 ### TF04-2 区域层级栈（`stores/sceneStore.ts`）
-- [ ] 支持多级区域下钻：把 `currentRegionId: string|null` 升级为**区域栈** `regionStack: string[]`（或新增之，保留 `currentRegionId = 栈顶` 派生）。
-- [ ] `enterRegion(id)`：压栈并设 `currentLevel = Region`。
-- [ ] 回退：`backOneLevel()`——Region 层出栈一级（栈空则回 World）；Spot 层回到栈顶 Region。`backToWorld()` 清空栈。
-- [ ] 保持现有 `beginTransition/endTransition` 转场状态机不变。
+- [x] 支持多级区域下钻：把 `currentRegionId: string|null` 升级为**区域栈** `regionStack: string[]`（或新增之，保留 `currentRegionId = 栈顶` 派生）。
+- [x] `enterRegion(id)`：压栈并设 `currentLevel = Region`。
+- [x] 回退：`backOneLevel()`——Region 层出栈一级（栈空则回 World）；Spot 层回到栈顶 Region。`backToWorld()` 清空栈。
+- [x] 保持现有 `beginTransition/endTransition` 转场状态机不变。
 
 ### TF04-3 场景渲染：容器区域显示子区域 + 叶子区域显示景点（`SceneStage.tsx` + `mappers.ts`）
-- [ ] Region 层节点数据 = `childRegions.map(regionStateToNode)` ∪ `spots.map(s => spotStateToNode(s, region))`，两类可并存。
-- [ ] 节点需携带"类型"标记（region / spot），供点击分发与样式区分：
+- [x] Region 层节点数据 = `childRegions.map(regionStateToNode)` ∪ `spots.map(s => spotStateToNode(s, region))`，两类可并存。
+- [x] 节点需携带"类型"标记（region / spot），供点击分发与样式区分：
   - 建议给 `NodeDatum` 增一个 `kind?: 'region' | 'spot'`（前端局部类型，非契约），或用现有 id 前缀判断（不推荐，脆弱）。
-- [ ] `handleNodeClick` 改为按节点 `kind` 分发：
+- [x] `handleNodeClick` 改为按节点 `kind` 分发：
   - `kind==='region'` → `enterRegion(id)` + 进入相机动画（继续下钻，**不是** enterSpot）。
   - `kind==='spot'` → `enterSpot(id)` + 进入相机动画。
   - World 层点击仍 `enterRegion`。
-- [ ] `mappers.ts`：子区域节点定位——优先用该子区域在父 `children` 边里的 `coord`，否则沿用 `regionStateToNode` 的索引散布；景点定位维持现有经纬度投影逻辑（`spotStateToNode(spot, region)`）。
-- [ ] 底图（TF-1 既有逻辑）：仅当 `region.mapSize && region.geoBounds` 齐全时设底图（叶子城市如成都有，容器区域可无底图，走纯色背景，不崩溃）。
+- [x] `mappers.ts`：子区域节点定位——优先用该子区域在父 `children` 边里的 `coord`，否则沿用 `regionStateToNode` 的索引散布；景点定位维持现有经纬度投影逻辑（`spotStateToNode(spot, region)`）。
+- [x] 底图（TF-1 既有逻辑）：仅当 `region.mapSize && region.geoBounds` 齐全时设底图（叶子城市如成都有，容器区域可无底图，走纯色背景，不崩溃）。
 
 ### TF04-4 面包屑/回退（`scenes/components/SceneHud.tsx`）
-- [ ] 面包屑反映区域栈：World › 亚洲 › 中国 › 四川 › 成都 ›（Spot）。
-- [ ] 回退按钮调用 `backOneLevel()`，逐级镜像相机回退动画（不是直接跳回 World）。
+- [x] 面包屑反映区域栈：World › 亚洲 › 中国 › 四川 › 成都 ›（Spot）。
+- [x] 回退按钮调用 `backOneLevel()`，逐级镜像相机回退动画（不是直接跳回 World）。
 
 ---
 
@@ -88,11 +88,11 @@ World 入口 → region_asia(亚洲)
 5. 验收（第 5 章）
 
 ## 5. 验收
-- [ ] 进入 `/world` 只看到顶层"亚洲"，不再平铺所有区域。
-- [ ] 可逐级下钻：亚洲 → 中国 → 四川 → 成都，且在四川层能看到"成都"和"青城山-都江堰世界遗产路线"两个子区域入口。
-- [ ] 成都层出现 8 个景点（经纬度投影底图，沿用既有逻辑）；点击景点进入 Spot。
-- [ ] 进入遗产路线区域，能看到都江堰、青城山（与成都共享的同一实体）。
-- [ ] 逐级回退动画正确，面包屑层级正确；缺底图的容器区域不崩溃。
-- [ ] 前端 `npm run build:web` 通过；Mock 与真实接口结构一致。
+- [x] 进入 `/world` 只看到顶层"亚洲"，不再平铺所有区域。
+- [x] 可逐级下钻：亚洲 → 中国 → 四川 → 成都，且在四川层能看到"成都"和"青城山-都江堰世界遗产路线"两个子区域入口。
+- [x] 成都层出现 8 个景点（经纬度投影底图，沿用既有逻辑）；点击景点进入 Spot。
+- [x] 进入遗产路线区域，能看到都江堰、青城山（与成都共享的同一实体）。
+- [x] 逐级回退动画正确，面包屑层级正确；缺底图的容器区域不崩溃。
+- [x] 前端 `npm run build:web` 通过；Mock 与真实接口结构一致。
 
 > 涉及源文件：`services/mock/mockApi.ts`、`stores/sceneStore.ts`、`scenes/components/SceneStage.tsx`、`scenes/mappers.ts`、`scenes/components/SceneHud.tsx`、`scenes/runtime/SceneRuntime.ts`（NodeDatum 若加 kind）。

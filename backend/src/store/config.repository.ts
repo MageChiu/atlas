@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { RegionChildType, RegionStatus, seedDataset } from '@atlas/shared';
+import { RegionChildType, RegionStatus, RegionType, seedDataset } from '@atlas/shared';
 import type {
   Action,
   AITemplate,
@@ -99,6 +99,42 @@ export class ConfigRepository {
   }
   getSpot(id: string): Spot | undefined {
     return this.spots.get(id);
+  }
+
+  /**
+   * 反查景点所属的城市 region id（用于 LLM 路由上下文）。
+   * 从景点主归属 regionId 沿 children 边逆向上溯，取最近的 City 类型祖先（含自身）。
+   * 找不到则返回 undefined（如世界遗产路线等非行政分组下未挂城市的景点）。
+   */
+  getCityIdForSpot(spotId: string): string | undefined {
+    const spot = this.spots.get(spotId);
+    if (!spot) return undefined;
+    return this.findCityAncestor(spot.regionId, new Set());
+  }
+
+  private findCityAncestor(regionId: string, visited: Set<string>): string | undefined {
+    if (visited.has(regionId)) return undefined;
+    visited.add(regionId);
+    const region = this.regions.get(regionId);
+    if (!region) return undefined;
+    if (region.type === RegionType.City) return region.id;
+    for (const parentId of this.parentRegionIds(regionId)) {
+      const found = this.findCityAncestor(parentId, visited);
+      if (found) return found;
+    }
+    return undefined;
+  }
+
+  /** 声明了 regionId 为子 Region 的父区域集合（children 边逆向） */
+  private parentRegionIds(regionId: string): string[] {
+    const parents: string[] = [];
+    for (const r of this.regions.values()) {
+      const hit = r.children?.some(
+        (c) => c.refType === RegionChildType.Region && c.refId === regionId,
+      );
+      if (hit) parents.push(r.id);
+    }
+    return parents;
   }
 
   listActionsBySpot(spotId: string): Action[] {

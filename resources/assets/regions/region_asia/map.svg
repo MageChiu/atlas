@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1621" width="2048" height="1621">
+  <defs>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3e6c8"/>
+      <stop offset="1" stop-color="#e4d3a8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#fff6df" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff6df" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceaf0"/>
+      <stop offset="1" stop-color="#c4dde6"/>
+    </linearGradient>
+  </defs>
+  <rect width="2048" height="1621" fill="url(#land)"/>
+  <polygon points="1228.8,1621.0 2048.0,1621.0 2048.0,689.8 1765.5,862.2 1511.3,1103.7 1341.8,1345.1" fill="url(#ocean)" opacity=".95"/>
+  <polygon points="0.0,1621.0 1228.8,1621.0 1059.3,1310.6 748.6,1345.1 423.7,1241.6 183.6,1207.1 0.0,1138.1" fill="url(#ocean)" opacity=".95"/>
+  <polygon points="635.6,793.3 847.4,827.7 1059.3,862.2 988.7,931.2 805.1,914.0 663.8,862.2" fill="#cdbf94" opacity=".7"/>
+  <rect width="2048" height="1621" fill="url(#glow)"/>
+  <text x="2008" y="1585" text-anchor="end"
+        font-family="system-ui, PingFang SC, sans-serif" font-size="44"
+        fill="#9c8a5e" opacity=".5">亚洲 · ASIA</text>
+</svg>

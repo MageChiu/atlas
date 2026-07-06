@@ -31,13 +31,12 @@ export class AppConfigService {
   // ---- 05 NPC 对话系统 ----
   /** NPC 技能资产目录（读盘载入 *.skill.json），默认 ./resources/skills */
   readonly skillsDir = process.env.SKILLS_DIR ?? join(process.cwd(), '..', 'resources', 'skills');
-  /** LLM provider 选择：mock | <real>，默认 mock */
-  readonly llmProvider = process.env.LLM_PROVIDER ?? 'mock';
-  /** 真实 LLM provider 配置（mock 阶段可空） */
-  readonly llmApiBase = process.env.LLM_API_BASE ?? '';
-  readonly llmApiKey = process.env.LLM_API_KEY ?? '';
-  readonly llmModel = process.env.LLM_MODEL ?? '';
-  /** Mock LLM 模拟耗时（毫秒） */
+  /**
+   * 08 LLM 多 Provider 结构化配置文件路径（由 Secret 挂载）。
+   * 为空时走 mock fallback（仅本地开发）；生产应显式提供。
+   */
+  readonly llmConfigFile = process.env.LLM_CONFIG_FILE ?? '';
+  /** Mock LLM 模拟耗时（毫秒），用于无配置文件时的 mock fallback */
   readonly llmMockDelayMs = Number(process.env.LLM_MOCK_DELAY_MS ?? 200);
   /** 单会话最大轮次，达上限后会话结束 */
   readonly dialogueMaxTurns = Number(process.env.DIALOGUE_MAX_TURNS ?? 20);

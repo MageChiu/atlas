@@ -45,6 +45,128 @@ function polyline(points, bounds, size) {
     .join(' ');
 }
 
+/** 经纬度数组 [[lng,lat],...] → 折线/多边形坐标串 */
+function poly(pairs, bounds, size) {
+  return polyline(
+    pairs.map(([lng, lat]) => ({ lng, lat })),
+    bounds,
+    size,
+  );
+}
+
+const SVG_DEFS = `<defs>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3e6c8"/>
+      <stop offset="1" stop-color="#e4d3a8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#fff6df" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff6df" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceaf0"/>
+      <stop offset="1" stop-color="#c4dde6"/>
+    </linearGradient>
+  </defs>`;
+
+function svgOpen(W, H) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">`;
+}
+function svgTitle(W, H, label) {
+  return `<text x="${(W - 40).toFixed(0)}" y="${(H - 36).toFixed(0)}" text-anchor="end"
+        font-family="system-ui, PingFang SC, sans-serif" font-size="44"
+        fill="#9c8a5e" opacity=".5">${label}</text>`;
+}
+
+/** 地球世界底图（等距圆柱 Plate Carrée）：海洋底 + 暖色大陆轮廓 */
+function buildEarthSvg(bounds, size) {
+  const { width: W, height: H } = size;
+  const continents = [
+    // 非洲
+    [[-15, 14], [12, 35], [33, 31], [44, 12], [51, 11], [42, -3], [27, -34], [15, -30], [9, 2], [-8, 5]],
+    // 欧亚大陆
+    [[-10, 36], [5, 44], [40, 46], [55, 42], [70, 38], [90, 30], [105, 25], [120, 30], [135, 50], [158, 62], [180, 68], [180, 78], [60, 80], [10, 70], [-10, 50]],
+    // 北美洲
+    [[-168, 65], [-150, 71], [-95, 72], [-60, 60], [-52, 47], [-72, 40], [-82, 25], [-100, 18], [-118, 30], [-128, 42], [-145, 60]],
+    // 南美洲
+    [[-80, 9], [-60, 10], [-35, -5], [-40, -23], [-55, -40], [-70, -54], [-73, -38], [-79, -15], [-82, -3]],
+    // 澳大利亚
+    [[114, -22], [130, -12], [143, -11], [153, -28], [148, -38], [133, -32], [118, -35]],
+  ];
+  const landPolys = continents
+    .map(
+      (c) =>
+        `  <polygon points="${poly(c, bounds, size)}" fill="url(#land)" stroke="#cbb98a" stroke-width="3" opacity=".95"/>`,
+    )
+    .join('\n');
+  return `${svgOpen(W, H)}
+  ${SVG_DEFS}
+  <rect width="${W}" height="${H}" fill="url(#ocean)"/>
+${landPolys}
+  <rect width="${W}" height="${H}" fill="url(#glow)"/>
+  ${svgTitle(W, H, '地球 · EARTH')}
+</svg>`;
+}
+
+/** 亚洲底图：陆地底 + 东南/西南海域 + 喜马拉雅山带 */
+function buildAsiaSvg(bounds, size) {
+  const { width: W, height: H } = size;
+  const oceanSE = [[112, -12], [170, -12], [170, 42], [150, 32], [132, 18], [120, 4]];
+  const oceanS = [[25, -12], [112, -12], [100, 6], [78, 4], [55, 10], [38, 12], [25, 16]];
+  const himalaya = [[70, 36], [85, 34], [100, 32], [95, 28], [82, 29], [72, 32]];
+  return `${svgOpen(W, H)}
+  ${SVG_DEFS}
+  <rect width="${W}" height="${H}" fill="url(#land)"/>
+  <polygon points="${poly(oceanSE, bounds, size)}" fill="url(#ocean)" opacity=".95"/>
+  <polygon points="${poly(oceanS, bounds, size)}" fill="url(#ocean)" opacity=".95"/>
+  <polygon points="${poly(himalaya, bounds, size)}" fill="#cdbf94" opacity=".7"/>
+  <rect width="${W}" height="${H}" fill="url(#glow)"/>
+  ${svgTitle(W, H, '亚洲 · ASIA')}
+</svg>`;
+}
+
+/** 中国底图：陆地底 + 东南海域 + 西部高原 + 长江/黄河 */
+function buildChinaSvg(bounds, size) {
+  const { width: W, height: H } = size;
+  const oceanSE = [[118, 18], [135, 18], [135, 42], [126, 38], [121, 30], [119, 22]];
+  const plateauW = [[73, 40], [88, 42], [96, 34], [92, 28], [84, 28], [78, 31], [73, 34]];
+  const yangtze = [[90, 33], [98, 31], [105, 30], [110, 30], [116, 31], [122, 32]];
+  const yellow = [[96, 35], [102, 36], [106, 39], [110, 37], [114, 36], [119, 38]];
+  return `${svgOpen(W, H)}
+  ${SVG_DEFS}
+  <rect width="${W}" height="${H}" fill="url(#land)"/>
+  <polygon points="${poly(oceanSE, bounds, size)}" fill="url(#ocean)" opacity=".95"/>
+  <polygon points="${poly(plateauW, bounds, size)}" fill="#cdbf94" opacity=".7"/>
+  <polyline points="${poly(yangtze, bounds, size)}" fill="none" stroke="#9fc6d8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+  <polyline points="${poly(yellow, bounds, size)}" fill="none" stroke="#bcae7d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+  <rect width="${W}" height="${H}" fill="url(#glow)"/>
+  ${svgTitle(W, H, '中国 · CHINA')}
+</svg>`;
+}
+
+/** 四川底图：西部横断山地 + 成都平原暖块 + 岷江 */
+function buildSichuanSvg(bounds, size) {
+  const { width: W, height: H } = size;
+  const px = (lng, lat) => geoToPixel({ lng, lat }, bounds, size);
+  const mtnW = [[97, 34], [101, 34], [101.5, 30], [101, 27], [97, 26]];
+  const mtnW2 = [[97, 34], [100, 34], [100, 29], [99, 26], [97, 26]];
+  const basinNW = px(103.0, 31.6);
+  const basinSE = px(106.0, 29.4);
+  const minRiver = [[103.0, 33.6], [103.3, 32.2], [103.6, 31.0], [103.9, 30.4], [104.1, 29.6], [104.3, 28.8]];
+  return `${svgOpen(W, H)}
+  ${SVG_DEFS}
+  <rect width="${W}" height="${H}" fill="url(#land)"/>
+  <polygon points="${poly(mtnW, bounds, size)}" fill="#cdbf94" opacity=".75"/>
+  <polygon points="${poly(mtnW2, bounds, size)}" fill="#b9aa7d" opacity=".6"/>
+  <rect x="${basinNW.x.toFixed(0)}" y="${basinNW.y.toFixed(0)}"
+        width="${(basinSE.x - basinNW.x).toFixed(0)}" height="${(basinSE.y - basinNW.y).toFixed(0)}" rx="80"
+        fill="#efd9b0" opacity=".55"/>
+  <polyline points="${poly(minRiver, bounds, size)}" fill="none" stroke="#9fc6d8" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+  <rect width="${W}" height="${H}" fill="url(#glow)"/>
+  ${svgTitle(W, H, '四川 · SICHUAN')}
+</svg>`;
+}
+
 /** 构造风格化成都地图 SVG（坐标系 = mapSize；地物按经纬度投影） */
 function buildChengduSvg(bounds, size) {
   const { width: W, height: H } = size;
@@ -130,6 +252,15 @@ function buildChengduSvg(bounds, size) {
 </svg>`;
 }
 
+/** regionId → SVG 模板构造器（无模板者跳过，由设计/AI 出图替换同名 PNG） */
+const BUILDERS = {
+  region_earth: buildEarthSvg,
+  region_asia: buildAsiaSvg,
+  region_china: buildChinaSvg,
+  region_sichuan: buildSichuanSvg,
+  region_chengdu: buildChengduSvg,
+};
+
 async function main() {
   console.log('[gen-region-map] 生成风格化插画区域底图（方案 B）');
   let ok = 0;
@@ -154,14 +285,15 @@ async function main() {
       `  · ${region.name} bbox 比例校验 ratio=${check.ratio.toFixed(3)} expected=${check.expected.toFixed(3)} 偏差=${(check.deviation * 100).toFixed(1)}% ${check.ok ? 'OK' : 'WARN'}`,
     );
 
-    if (region.id !== 'region_chengdu') {
+    const builder = BUILDERS[region.id];
+    if (!builder) {
       console.warn(`  ! ${region.name} 暂无插画模板，跳过`);
       skip++;
       continue;
     }
 
     try {
-      const svg = buildChengduSvg(region.geoBounds, region.mapSize);
+      const svg = builder(region.geoBounds, region.mapSize);
       const svgPath = join(ASSET_DIR, region.mapAsset.replace(/\.png$/, '.svg'));
       await mkdir(dirname(svgPath), { recursive: true });
       await writeFile(svgPath, svg, 'utf8');

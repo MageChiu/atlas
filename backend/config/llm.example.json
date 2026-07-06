@@ -1,0 +1,60 @@
+{
+  "providers": [
+    {
+      "id": "mock-local",
+      "type": "mock",
+      "enabled": true,
+      "priority": 50,
+      "weight": 100,
+      "tags": ["dialogue", "backup"],
+      "mockDelayMs": 200
+    },
+    {
+      "id": "openai-primary",
+      "type": "openai-compatible",
+      "baseUrl": "https://llm-a.internal/v1",
+      "apiKey": "REPLACE_WITH_SECRET",
+      "model": "deepseek-chat",
+      "enabled": false,
+      "priority": 100,
+      "weight": 80,
+      "tags": ["dialogue", "chengdu"],
+      "timeoutMs": 15000,
+      "temperature": 0.8,
+      "maxTokens": 1024
+    },
+    {
+      "id": "openai-backup",
+      "type": "openai-compatible",
+      "baseUrl": "https://llm-b.internal/v1",
+      "apiKey": "REPLACE_WITH_SECRET",
+      "model": "ep-xxx",
+      "enabled": false,
+      "priority": 90,
+      "weight": 20,
+      "tags": ["dialogue", "backup"],
+      "timeoutMs": 12000,
+      "temperature": 0.7,
+      "maxTokens": 1024
+    }
+  ],
+  "routes": [
+    {
+      "id": "default-dialogue",
+      "match": { "feature": "dialogue" },
+      "candidateTags": ["dialogue"],
+      "strategy": "weighted"
+    },
+    {
+      "id": "chengdu-dialogue",
+      "match": { "feature": "dialogue", "cityId": "region_chengdu" },
+      "candidateTags": ["dialogue", "chengdu"],
+      "strategy": "priority"
+    }
+  ],
+  "failoverPolicy": {
+    "maxAttempts": 2,
+    "retryableErrors": ["timeout", "5xx", "network"],
+    "switchOnErrors": ["timeout", "5xx", "network"]
+  }
+}

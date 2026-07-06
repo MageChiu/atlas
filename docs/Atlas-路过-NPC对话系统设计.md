@@ -116,6 +116,11 @@ export interface DialogueSessionData {
 }
 ```
 
+> 08 一期公共边界补充：
+> - 对话三条路由 `dialogueStart / dialogueSay / dialogueSession` 路径不变；
+> - `StartDialogueRequest / SayRequest / SayData / DialogueSessionData` 本期不新增必填字段；
+> - 若未来确实需要前端透传业务场景信息，应优先考虑 `businessScene / dialogueMode / scenario` 这类业务语义字段，而不是直接塞入模糊的 `sceneId`。
+
 ### 3.5 新增错误码
 ```
 DIALOGUE_SESSION_NOT_FOUND   // 会话不存在/无权访问
@@ -149,9 +154,14 @@ backend/src/
     dialogue.service.ts        # 会话编排 + 收获判定（服务端权威）
     npc.repository.ts          # 载入 resources/skills/*.skill.json，按 id 提供 NpcProfile
     llm/
-      llm.provider.ts          # interface LlmProvider { chat(req): Promise<{text}> }
-      mock-llm.provider.ts     # 默认实现：基于 knowledge 返回桩文本（联调可跑）
-      # real provider 后插，靠 DI token 切换，业务层零改动
+      llm.provider.ts          # 单个 provider 调用接口
+      providers/
+        openai-compatible.provider.ts
+        mock.provider.ts
+      llm-config.ts            # 结构化配置读取与校验
+      llm-registry.ts          # provider 实例化与索引
+      llm-router.ts            # 根据上下文选择候选 provider
+      llm-service.ts           # 对业务层暴露统一 chat(ctx, req)
   store/
     dialogue-session.repository.ts  # 内存会话仓储（已定：先内存）
 ```
@@ -181,7 +191,11 @@ say:
   2. 内容安全：用户输入过 RiskService（命中 RISK_BLOCKED）
   3. 服务端组 system prompt = persona(软) + knowledge(硬, grounding) + guardrails
      —— knowledge/guardrails 绝不下发前端
-  4. 调 LlmProvider.chat({system, history, userMsg})；不可用 → LLM_UNAVAILABLE
+  4. 调统一 LlmService.chat(ctx, req)：
+     - 由后端内部路由决定候选 provider
+     - provider 失败时按策略切换
+     - 对业务层仍只暴露统一回复结果
+     不可用 → LLM_UNAVAILABLE
   5. 追加消息到会话历史
   6. 收获判定：对照 spot.dialogueRewards.topicHints 命中且未发过 → 复用 reward 发放(幂等)，
      计入 grantedTriggerIds，返回 grants
@@ -191,16 +205,23 @@ say:
 ### 4.4 关键约束
 - **system prompt 服务端组装、永不下发**（防注入泄露/篡改、保证史实锚定只在服务端）。
 - **收获判定服务端权威**，前端/模型无权发奖；发奖走现有 reward 通道并幂等去重。
-- **LlmProvider 抽象**：禁止把任何具体 LLM SDK 直接 import 进 `DialogueService`；默认 `MockLlmProvider`（参考 `AiService.mockGenerate` 的"无 provider 也能跑"哲学）。
+- **LLM 多 Provider 池 + 内部路由**：provider 选择、权重、失败切换均属于后端内部能力，前端不直接感知。
+- **LlmProvider 抽象**：禁止把任何具体 LLM SDK 直接 import 进 `DialogueService`；具体 provider 通过 registry / router / 统一 `LlmService` 间接接入。
 - 复用现有 `RiskService`、`BusinessException`、统一响应/错误过滤器。
 
 ### 4.5 配置（app-config.service.ts 增，env 读取）
 ```
-LLM_PROVIDER=mock            # mock | <real>
-LLM_API_BASE / LLM_API_KEY / LLM_MODEL   # 真实 provider 用，mock 阶段留空
-SKILLS_DIR=./resources/skills            # NPC 资产目录
-DIALOGUE_MAX_TURNS=20                     # 单会话上限（成本/滥用兜底）
+LLM_CONFIG_FILE=/etc/atlas/llm/config.json  # 指向结构化配置文件（Secret 挂载）
+SKILLS_DIR=./resources/skills               # NPC 资产目录
+DIALOGUE_MAX_TURNS=20                       # 单会话上限（成本/滥用兜底）
 ```
+
+结构化配置文件承载：
+- 多 provider 池（主备 / 多活 / 加权）
+- 路由规则（按 feature / city / npc 等）
+- failover 策略（最大尝试次数、可切换错误集合）
+
+> 一期不前置动态健康检查，但框架需要为后续健康探测和摘流留扩展位。
 
 ---
 
@@ -227,6 +248,7 @@ hooks/useDialogue.ts       # start/say 封装（TanStack Query useMutation）
 - 错误：`RISK_BLOCKED` 提示内容不合适；`LLM_UNAVAILABLE` 提示稍后再试并允许重发；`DIALOGUE_SESSION_ENDED` 引导关闭面板。
 - Mock 与真实接口**结构完全一致**，联调零字段改动（前端规范铁律）。
 - 不写死 NPC 文案：开场白/回复均来自接口；前端只渲染。
+- 一期前端**不直接传 providerId / routeHint / sceneId**；如未来确需补充业务场景字段，须先经公共契约冻结。
 
 ---
 
@@ -255,12 +277,12 @@ hooks/useDialogue.ts       # start/say 封装（TanStack Query useMutation）
 
 ## 8. MVP 切片（评审后第一刀）
 
-只做：**杜甫草堂**接入 `npc_dufu` + 全局 `npc_passerby`，`MockLlmProvider`，1~2 个收获触发点（诗卡），跑通：
+只做：**杜甫草堂**接入 `npc_dufu` + 全局 `npc_passerby`，先用 mock / 最小真实 provider 骨架，1~2 个收获触发点（诗卡），跑通：
 ```
 encounter Action → dialogue/start → 多轮 say（服务端组 prompt + mock 回复）
   → 命中知识点 → 服务端发奖(幂等) → RewardPopup + 图鉴
 ```
-验证体验与链路后，再：①接真实 LlmProvider；②扩 NPC/景点；③评估 SSE 流式。
+验证体验与链路后，再：①完善多 Provider 路由与 failover；②扩 NPC/景点；③评估 SSE 流式；④补动态健康检查。
 
 ---
 

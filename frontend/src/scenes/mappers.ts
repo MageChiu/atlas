@@ -5,18 +5,23 @@ import type { NodeDatum } from './runtime/SceneRuntime';
 /** 配置实体 → 场景节点（数据驱动渲染，不写死） */
 
 /**
- * 区域节点定位：
- * - World 层 / 无父坐标：按索引散布（散点网格）。
- * - 容器区域下钻：优先用父 children 边里的 coord（若提供），否则索引散布。
+ * 区域节点定位（优先级，与 06 设计 §4 一致）：
+ *   子.geo + 父.geoBounds/父.mapSize 投影 → RegionChildRef.coord → 索引散布兜底。
+ * 这样容器层（地球/亚洲/中国/四川）的子区域入口落在父底图的地理正确相对位置。
  */
 export function regionStateToNode(
   region: Region,
   index = 0,
   coord?: { x: number; y: number },
+  parent?: Region,
 ): NodeDatum {
   let x: number;
   let y: number;
-  if (coord) {
+  if (parent?.geoBounds && parent.mapSize && region.geo) {
+    const p = geoToPixel(region.geo, parent.geoBounds, parent.mapSize);
+    x = p.x;
+    y = p.y;
+  } else if (coord) {
     x = coord.x;
     y = coord.y;
   } else {
